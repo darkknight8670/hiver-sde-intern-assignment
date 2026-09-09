@@ -81,7 +81,6 @@ def build_evaluation_records(golden, predictions):
 
     for example_id, prediction in prediction_by_id.items():
 
-        # Skip failed Gemini records.
         if prediction.get("status") == "error":
             continue
 
@@ -203,7 +202,7 @@ def main():
     print(f"Trivial predictions:   {len(trivial_predictions)}")
     print(f"Simple predictions:    {len(simple_predictions)}")
     print(
-        "Gemini predictions:    "
+        "Final agent predictions: "
         f"{sum(1 for r in agent_predictions if r.get('status') == 'success')}"
     )
 
@@ -222,10 +221,52 @@ def main():
         agent_predictions
     )
 
+    judge_predictions = load_jsonl(
+        PROJECT_ROOT / "results" / "evaluation" / "llm_judge.jsonl"
+    )
+    human_reviews = load_jsonl(
+        PROJECT_ROOT / "data" / "golden" / "human_review.jsonl"
+    )
+    human_fields = (
+        "human_acceptable",
+        "human_grounded",
+        "human_helpful",
+        "human_correct",
+        "human_hallucination",
+        "human_reason",
+    )
+    genuine_judge_ids = {
+        record["example_id"]
+        for record in judge_predictions
+        if (
+            record.get("status") == "success"
+            and not record.get("mock")
+            and not record.get("mock_disclaimer")
+            and record.get("example_id")
+        )
+    }
+    genuine_human_ids = {
+        record["example_id"]
+        for record in human_reviews
+        if (
+            record.get("example_id")
+            and all(record.get(field) not in (None, "") for field in human_fields)
+        )
+    }
+
     results = {
         "trivial": calculate_metrics(trivial_records),
         "simple": calculate_metrics(simple_records),
-        "gemini_agent": calculate_metrics(agent_records),
+        "groq_agent": calculate_metrics(agent_records),
+        "coverage": {
+            "golden_n": len(golden),
+            "trivial_n": len(trivial_records),
+            "simple_n": len(simple_records),
+            "final_agent_n": len(agent_records),
+            "genuine_judge_n": len(genuine_judge_ids),
+            "genuine_human_review_n": len(genuine_human_ids),
+            "human_judge_agreement_n": len(genuine_human_ids & genuine_judge_ids),
+        },
     }
 
     print()
@@ -242,7 +283,7 @@ def main():
 
     print_row("trivial", results["trivial"])
     print_row("simple", results["simple"])
-    print_row("gemini_agent", results["gemini_agent"])
+    print_row("groq_agent", results["groq_agent"])
 
     print()
     print("Evaluation notes:")
@@ -253,10 +294,10 @@ def main():
         "- Baseline predictions are joined using example_id."
     )
     print(
-        "- Failed Gemini/API records are excluded."
+        "- Failed API records are excluded."
     )
     print(
-        f"- Gemini evaluation sample size: {len(agent_records)}"
+        f"- Final-agent evaluation sample size: {len(agent_records)}"
     )
 
     with open(

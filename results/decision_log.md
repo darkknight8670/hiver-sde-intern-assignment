@@ -54,11 +54,23 @@ The agent is instructed to prefer human escalation when resolving an issue requi
 
 The agent returns a fixed JSON schema containing intent, routing, routing\_reason, and response. This makes the system easier to evaluate automatically and separates classification/routing decisions from the generated text.
 
-## 14\. Gemini API selection
+## 14\. Initial Gemini provider
 
-Gemini was selected for the LLM component because a supported API model was available for experimentation without requiring paid OpenAI API credits. During evaluation, the free-tier request quota limited the number of completed agent evaluations.
+Gemini was used during initial development because a supported API model was available for experimentation. Its applicable request quota interrupted the first batch after 14 successful predictions; those preliminary records were preserved but are not the final headline evaluation.
 
-## 15\. Evaluation limitation
+## 15\. Groq provider switch
 
-Only 14 Gemini predictions completed successfully before the API quota was exhausted. We therefore treat the 14-example Gemini metrics as preliminary and do not use them as the main performance claim. The LLM-as-judge harness was implemented but no judge results were completed under the available quota.
+The final batch and judge used the official Groq Python SDK with an explicit provider switch, `LLM_PROVIDER=groq`, and model `openai/gpt-oss-120b`. The agent's JSON schema and 12-intent taxonomy were kept unchanged.
+
+## 16\. Resumable evaluation
+
+The agent and judge evaluators preserve successful example IDs, retry transient provider failures with bounded backoff, and do not write failed predictions as completed results. The final artifacts contain 200 unique agent predictions and 200 unique genuine judge records.
+
+## 17\. LLM-as-judge scope
+
+The judge scores groundedness, helpfulness, correctness, tone, hallucination, overall quality, acceptability, and reason using only each real agent record. Mock or synthetic judge records are excluded from the final count.
+
+## 18\. Human review limitation
+
+Human review was intentionally not completed for this submission. The human-review file remains an unreviewed template, so no human-quality metric or human-judge agreement statistic is reported.
 

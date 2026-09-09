@@ -5,7 +5,7 @@ from pathlib import Path
 
 GOLDEN_PATH = Path("data/golden/golden_set.jsonl")
 PREDICTIONS_PATH = Path(
-    "results/baselines/simple_predictions.jsonl"
+    "results/evaluation/agent_predictions.jsonl"
 )
 
 
@@ -17,7 +17,11 @@ def load_jsonl(path):
 def main():
 
     golden = load_jsonl(GOLDEN_PATH)
-    predictions = load_jsonl(PREDICTIONS_PATH)
+    predictions = [
+        prediction
+        for prediction in load_jsonl(PREDICTIONS_PATH)
+        if prediction.get("status") == "success"
+    ]
 
     golden_by_id = {
         item["example_id"]: item
@@ -106,7 +110,7 @@ def main():
     # ---------------------------------------------------------
 
     print("=" * 70)
-    print("SIMPLE BASELINE ERROR ANALYSIS")
+    print("FINAL AGENT ERROR ANALYSIS")
     print("=" * 70)
 
     print(f"\nIntent errors       : {len(intent_errors)}")

@@ -66,6 +66,7 @@ kaggle
 PyPDF2
 pytest
 google-genai
+groq
 ```
 
 ## Dataset
@@ -85,6 +86,11 @@ The dataset contains customer-support tweets, support responses, timestamps, inb
 Create `.env` in the project root:
 
 ```text
+LLM_PROVIDER=groq
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=openai/gpt-oss-120b
+
+# Gemini remains available as an alternative provider.
 GEMINI_API_KEY=your_gemini_api_key
 GEMINI_MODEL=gemini-3.6-flash
 ```
@@ -203,7 +209,7 @@ A fixed 200-example golden set is stored at:
 data/golden/golden_set.jsonl
 ```
 
-It is sampled from the held-out test split and contains intent and routing annotations plus rationale and sampling metadata.
+It is sampled from the held-out test split and contains intent and routing annotations plus rationale and sampling metadata. The annotations were prepared through the project's annotation/model-assisted workflow; independent human validation was not completed for this submission.
 
 Inspect it:
 
@@ -268,8 +274,8 @@ TF-IDF Historical Retrieval
        v
 Top Similar AmazonHelp Interactions
        |
-       v
-Gemini
+        v
+Groq / Gemini
        |
        +----------------+
        |        |       |
@@ -362,6 +368,9 @@ Current fully evaluated 200-example results:
 |---|---:|---:|---:|---:|---:|
 | Trivial | 200 | 15.50% | 2.24% | 72.00% | 41.86% |
 | Simple | 200 | 53.00% | 51.81% | 35.00% | 32.00% |
+| Final Groq agent | 200 | 71.50% | 68.66% | 85.50% | 83.54% |
+
+The final Groq agent's weighted F1 scores are 71.43% for intent and 86.04% for routing. All three systems use the same 200-example golden-set denominator.
 
 The simple baseline improves intent accuracy by **37.5 percentage points** over the trivial baseline.
 
@@ -402,20 +411,18 @@ Output:
 results/evaluation/error_analysis.json
 ```
 
-Observed intent confusions include:
+The final agent artifact contains 57 intent errors and 29 routing errors. Its largest observed intent confusions include:
 
 ```text
-customer_service -> delivery_issue
-product_issue     -> return_refund
-return_refund     -> order_issue
-product_issue     -> order_issue
-prime_membership  -> payment_issue
-delivery_issue    -> product_issue
-promotion_offer   -> other
-prime_video       -> other
+return_refund     -> product_issue (4)
+prime_membership  -> payment_issue (3)
+promotion_offer   -> other (3)
+customer_service  -> delivery_issue (3)
+customer_service  -> product_issue (2)
+delivery_issue    -> customer_service (2)
 ```
 
-Low-similarity examples also include multilingual scam-related messages, showing a weakness of English-heavy TF-IDF retrieval.
+Routing errors contain 24 false negatives, where the agent auto-handled a case that was labelled for escalation, and 5 false positives. Representative risks are refunds, seller disputes, complaints after previous support, account/security issues, and order-specific investigations. The full examples are stored in `results/evaluation/error_analysis.json`.
 
 ## LLM-as-Judge
 
@@ -442,34 +449,28 @@ results/evaluation/llm_judge.jsonl
 
 The harness is resumable.
 
-### Evaluation limitation
+### Final evaluation status
 
-During development, the available Gemini API free-tier request quota was exhausted.
-
-Completed Gemini agent evaluations:
+During development, the available Gemini API quota interrupted the initial batch. Groq was subsequently used to complete the final agent evaluation.
 
 ```text
-14
+Agent predictions:       200 / 200
+Genuine LLM-judge rows:  200 / 200
+Genuine human reviews:     0 / 200
+Human/judge paired rows:   0
 ```
 
-Completed LLM-as-judge evaluations:
+The Groq judge results are model-generated quality assessments, not human labels. Human-versus-judge agreement was not computed because there are no paired independent human annotations.
 
-```text
-0
-```
+The genuine Groq judge used provider `Groq` and model `openai/gpt-oss-120b`. Its mean overall score was 4.64/5, median 5/5, and acceptable rate 96.0%. These are automated judge results, not human evaluation.
 
-The 14 successful Gemini evaluations produced:
+## What is misleading about my headline number?
 
-```text
-Intent accuracy: 100.00%
-Routing accuracy: 71.43%
-```
-
-However, `N=14` is too small to represent the 200-example golden set. These numbers are therefore **preliminary observations only**, not the primary headline result.
-
-No LLM-as-judge score is reported because doing so without completed judgments would be misleading.
+The 200-example score is useful but is not a universal measure of production quality. The golden set is a fixed sample from a random episode-level split, and results depend on the selected Groq model, prompt, historical-example retrieval, and provider behavior. API/provider differences can change outputs. The LLM judge is an automated rubric-based evaluator and may be biased or inconsistent. Human review coverage is zero, so there is no independent human quality validation. Baseline and agent metrics use the same 200-example denominator; judge metrics describe response quality separately rather than classification accuracy.
 
 ## Human Review
+
+Human review was not completed for this submission. Therefore human-judge agreement is not reported. The existing `data/golden/human_review.jsonl` contains unreviewed template records rather than completed human labels.
 
 Generate the human-review file:
 
@@ -490,6 +491,14 @@ python -m src.evaluation.review_human
 ```
 
 The project does not fabricate human-agreement statistics when independent human labels are unavailable.
+
+## Report
+
+The concise submission report, including evaluation methodology, top failure examples, next steps, and limitations, is available in [REPORT.md](REPORT.md).
+
+## Reproduction Notes
+
+The committed golden set, baseline predictions, final agent predictions, judge records, and aggregate JSON files reproduce the reported metrics without API access. Re-running the final agent or judge requires a provider API key and the corresponding model. The original TWCS CSV and generated processed JSONL splits are intentionally excluded because they are large; the committed final predictions contain populated historical AmazonHelp retrieval examples with similarity scores. To rebuild the retrieval corpus or independently rerun the agent evaluation, obtain TWCS and run the data pipeline first.
 
 ## Decision Log
 
@@ -553,7 +562,7 @@ python -m src.evaluation.compare
 python -m src.evaluation.error_analysis
 ```
 
-The Gemini agent requires a valid API key:
+The final agent requires a valid provider API key. Configure `LLM_PROVIDER=groq`, `GROQ_API_KEY`, and `GROQ_MODEL` in `.env` for the committed final provider, or configure the Gemini variables for the alternative provider:
 
 ```bash
 python -m src.agent.agent
@@ -565,40 +574,36 @@ Batch evaluation:
 python -m src.evaluation.run_agent
 ```
 
-## Headline Result and Its Limitation
+## Final Headline Result and Its Limitation
 
-The strongest fully evaluated comparison is the 200-example baseline evaluation:
+The final 200-example comparison is:
 
 ```text
-Trivial intent accuracy: 15.50%
-Simple intent accuracy:  53.00%
-
-Trivial intent macro-F1: 2.24%
-Simple intent macro-F1:  51.81%
+Trivial intent accuracy:      15.50%
+Simple intent accuracy:       53.00%
+Final Groq agent accuracy:    71.50%
+Final Groq agent macro-F1:    68.66%
+Final Groq routing accuracy:  85.50%
 ```
 
-The retrieval/rule baseline therefore improves intent accuracy by **37.5 percentage points** over the trivial baseline.
+The final agent was evaluated on all 200 examples. The Groq judge also evaluated 200 real agent responses. Human review was not completed, so human-judge agreement is not reported.
 
 ### What is misleading about my headline number?
 
-A headline such as **"100% intent accuracy with Gemini"** would be misleading because it is based on only 14 successful evaluations out of the 200-example golden set.
-
-The 200-example baseline comparison is the stronger and more defensible evidence.
+The 71.5% intent accuracy and 85.5% routing accuracy are measured on a 200-example set whose annotations were not independently human-validated. The set is sampled from a held-out test split rather than representing the full TWCS distribution. The final agent uses historical-example retrieval followed by LLM generation, and the result depends on the selected Groq model, prompt, provider behavior, and taxonomy. The automated LLM judge is not a substitute for human agreement. These results demonstrate a promising prototype rather than production-level accuracy.
 
 ## Future Work
 
 If additional development time were available:
 
-1. Complete the 200-example Gemini evaluation.
-2. Run LLM-as-judge evaluation on generated responses.
-3. Collect independent human ratings for a judge-agreement subset.
-4. Improve multilingual retrieval.
-5. Replace keyword routing rules with a calibrated routing classifier.
-6. Add confidence thresholds and abstention.
-7. Add retrieval-quality diagnostics.
-8. Evaluate ambiguous and adversarial customer messages.
-9. Add automated tests for structured agent output.
-10. Integrate live support tooling only after offline evaluation is strong.
+1. Restore the full generated AmazonHelp training split and rerun retrieval-backed evaluation.
+2. Collect independent human ratings for a judge-agreement subset.
+3. Improve multilingual and security-message retrieval.
+4. Replace keyword routing rules with a calibrated routing classifier.
+5. Add confidence thresholds and abstention.
+6. Add retrieval-quality diagnostics and regression tests for observed confusions.
+7. Evaluate multiple providers under the same prompt and denominator.
+8. Integrate live support tooling only after offline evaluation is strong.
 
 ## Summary
 
@@ -620,12 +625,12 @@ Explicit Escalation Policy
 Automated Evaluation
 ```
 
-The key fully evaluated result is:
+The key final result is:
 
 ```text
-15.50%  ->  53.00% intent accuracy
+15.50%  ->  53.00%  ->  71.50% intent accuracy
 ```
 
-for the trivial baseline versus the retrieval/rule baseline.
+for the trivial baseline, retrieval/rule baseline, and final Groq agent.
 
 The evaluation also exposes an important weakness: routing requires more than keyword recognition. Cases requiring private account/order investigation should be handled conservatively and escalated when necessary.

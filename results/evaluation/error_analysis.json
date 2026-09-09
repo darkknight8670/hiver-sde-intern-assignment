@@ -1,76 +1,22 @@
 {
   "intent_errors": [
     {
-      "example_id": "gold_0004",
-      "message": "Hey @115821 my @1511 got delivered today. I wasn’t home. Local dog destroyed it. What do I do?  Everything shredded.",
-      "true_intent": "product_issue",
-      "predicted_intent": "delivery_issue"
-    },
-    {
-      "example_id": "gold_0011",
-      "message": "@115850 Need some help regarding order # D01-1078442-3663061. The wrong book was delivered to my Kindle.",
-      "true_intent": "product_issue",
-      "predicted_intent": "delivery_issue"
-    },
-    {
       "example_id": "gold_0014",
       "message": "Earlier issue was of delivery now it's of product that they deliver. Ordered case for iphone 8 plus got for 7 plus @115850 @AmazonHelp https://t.co/HcUCv3ON5E",
       "true_intent": "customer_service",
+      "predicted_intent": "product_issue"
+    },
+    {
+      "example_id": "gold_0016",
+      "message": "#IndiasMostFearless gr8 book! got it thru @115850, guys Amazon's delivery and CS is pathetic. Be careful! U may consider sme other options",
+      "true_intent": "delivery_issue",
+      "predicted_intent": "customer_service"
+    },
+    {
+      "example_id": "gold_0019",
+      "message": "@115830 pre-ordered CoD WW2 on the 5th july, says today it won’t be delivered until 4th Nov, the day after release? Why is this?",
+      "true_intent": "order_issue",
       "predicted_intent": "delivery_issue"
-    },
-    {
-      "example_id": "gold_0017",
-      "message": "@AmazonHelp Hi I want to cancel one return order.. as my product has started working properly now. please help",
-      "true_intent": "return_refund",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0018",
-      "message": "Hey @115821 I live in an ancient apartment that is in no way gated or secure so how about you leave my $7 roll of contact paper on the front step instead of doing this every single time I order something https://t.co/IQZb64LOi0",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0020",
-      "message": "@115850,dear sir, order id:404-4313025-2413959 in India not solved refund issue since four months by amazon India,please......@115851",
-      "true_intent": "return_refund",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0021",
-      "message": "@AmazonHelp hey! Order was due by 8pm, it's now 9:30pm and nothing. Not sure what to do? 🤔🤔",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0022",
-      "message": "@115850 ORDER # 403-4691279-3840353 want to return. Initiated through website but this appears as message. What next? https://t.co/ivDr5DkOHZ",
-      "true_intent": "return_refund",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0024",
-      "message": "@115850 ordered LED light with 2 roll of 50 meter each as written in description but received only one roll of 50 meter yellow https://t.co/Ar7f0dLhjp",
-      "true_intent": "product_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0025",
-      "message": "Ordered some headphones on Black Friday from @115821 and… SURPRISE… they aren’t in the box… \n\nYay!",
-      "true_intent": "product_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0026",
-      "message": "Wow, @115821 Canada just billed me (again) for an order that I had paid for in August and received in Sept. #WTF #CustomerService",
-      "true_intent": "payment_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0027",
-      "message": "In a huge cosmic prank, I ordered @77573' Michigan poster and @115821 sent me a fucking Justin Bieber instead.  WTF, @115821!",
-      "true_intent": "product_issue",
-      "predicted_intent": "order_issue"
     },
     {
       "example_id": "gold_0028",
@@ -79,52 +25,46 @@
       "predicted_intent": "order_issue"
     },
     {
-      "example_id": "gold_0029",
-      "message": "@115830 Order number 204-0062763-9514739 states posts through letterbox. I've been home all day, no post.",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
       "example_id": "gold_0030",
       "message": "@115850 I had ordered a product through Amazon 20 days back.!Neither the product is received,nor the refund is initiated as per request.",
       "true_intent": "return_refund",
-      "predicted_intent": "order_issue"
+      "predicted_intent": "delivery_issue"
     },
     {
       "example_id": "gold_0032",
       "message": "@115850 Recently I've experienced some inconvenience from Amazon team regarding my order. Such rare thing to see from them. Really disappointed for such treatment. I request them to see into my matter.",
       "true_intent": "account_access",
-      "predicted_intent": "order_issue"
+      "predicted_intent": "customer_service"
     },
     {
-      "example_id": "gold_0044",
-      "message": "@115821 @AmazonHelp Why would you even bother sending a warped LP? I want my money back or the same LP sent again. Im not sending this back. https://t.co/BhwVvgXPCw",
-      "true_intent": "product_issue",
-      "predicted_intent": "return_refund"
+      "example_id": "gold_0037",
+      "message": "Dear @AmazonHelp @115830 2 broken desks delivered &amp; now your customer has to pay the return costs, organise the return and oh, there's a refund process... Very poor customer service for the company that is supposedly all about convenience &amp; service #CX #ecommerce #BlackFriday",
+      "true_intent": "return_refund",
+      "predicted_intent": "product_issue"
+    },
+    {
+      "example_id": "gold_0040",
+      "message": "@115850 superb response, refund initiated yesterday, picked up today and refund amount received within hours of pick-up. Hat's Off!",
+      "true_intent": "return_refund",
+      "predicted_intent": "other"
     },
     {
       "example_id": "gold_0045",
       "message": "@115850 R u kidding, Rs. 1780 exchange for a 29k phone which got lauched just few months back? https://t.co/siY6sACUbY",
       "true_intent": "return_refund",
-      "predicted_intent": "other"
+      "predicted_intent": "product_issue"
     },
     {
       "example_id": "gold_0046",
       "message": "@AmazonHelp I have ordered a washing machine on great Indian festival on exchange of old. But the new one's defective, initiated a return.",
       "true_intent": "product_issue",
-      "predicted_intent": "order_issue"
-    },
-    {
-      "example_id": "gold_0047",
-      "message": "@115833 @126972 My Amazon Echo plus return initiated within 24 hours. Do you have some in house quality check on speakers? Never heard such worst speaker",
-      "true_intent": "product_issue",
       "predicted_intent": "return_refund"
     },
     {
-      "example_id": "gold_0050",
-      "message": "if my trial is over will u charge me if so plz cancel it @AmazonHelp",
-      "true_intent": "prime_membership",
-      "predicted_intent": "payment_issue"
+      "example_id": "gold_0048",
+      "message": "@AmazonHelp 911145717213 raised return.. Was told tht technician wld visit within 48hrs..no sign of him after 60hrs!",
+      "true_intent": "return_refund",
+      "predicted_intent": "product_issue"
     },
     {
       "example_id": "gold_0051",
@@ -136,7 +76,7 @@
       "example_id": "gold_0053",
       "message": "@AmazonHelp need help getting a refund on Amazon Seller charge. Please advise",
       "true_intent": "payment_issue",
-      "predicted_intent": "return_refund"
+      "predicted_intent": "seller_marketplace"
     },
     {
       "example_id": "gold_0055",
@@ -145,46 +85,16 @@
       "predicted_intent": "payment_issue"
     },
     {
-      "example_id": "gold_0056",
-      "message": "Excuse me @115830  but why has this not dispatched? It's releasing TODAY @AmazonHelp https://t.co/42VCoD5GI1",
-      "true_intent": "order_issue",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0057",
-      "message": "When you check your bank account and Amazon charged you for the Prime renewal.. 😑😑",
-      "true_intent": "prime_membership",
-      "predicted_intent": "payment_issue"
-    },
-    {
       "example_id": "gold_0058",
       "message": "Where are the winners of iPhone 8 Recharge and win contest ? plz select me at least once @115850",
       "true_intent": "promotion_offer",
-      "predicted_intent": "payment_issue"
-    },
-    {
-      "example_id": "gold_0064",
-      "message": "@115850 while purchasing I was shown Lightening deal price but I was charged the original price at checkout. #cheating",
-      "true_intent": "promotion_offer",
-      "predicted_intent": "payment_issue"
-    },
-    {
-      "example_id": "gold_0071",
-      "message": "Wtf amazon took $110 out my account and I never use amazon",
-      "true_intent": "payment_issue",
-      "predicted_intent": "account_access"
-    },
-    {
-      "example_id": "gold_0072",
-      "message": "@AmazonHelp please resolve my account ossue whatever it is or else i am not going to take ur product which i m going to.receive tommrow return my money and keep ur account with u sorry to say will switch to.flipkart",
-      "true_intent": "account_access",
-      "predicted_intent": "return_refund"
+      "predicted_intent": "other"
     },
     {
       "example_id": "gold_0073",
       "message": "Gee, thanks for suddenly wanting me to enter a random code that you sent to my old phone without reason, @115830 .\nI sold that phone.\nAnd the password was correct.\nBut you know.\nGood job.",
       "true_intent": "promotion_offer",
-      "predicted_intent": "payment_issue"
+      "predicted_intent": "account_access"
     },
     {
       "example_id": "gold_0075",
@@ -202,7 +112,7 @@
       "example_id": "gold_0078",
       "message": "@115821 decided to put amazon prime on my account without permission smh I’m not paying for something I absolutely don’t want",
       "true_intent": "product_issue",
-      "predicted_intent": "account_access"
+      "predicted_intent": "prime_membership"
     },
     {
       "example_id": "gold_0079",
@@ -214,13 +124,7 @@
       "example_id": "gold_0080",
       "message": "@115821 My prime account just got renewed and I really need to cancel it. It happened 3 days ago without my knowledge. Can I get a refund?",
       "true_intent": "product_issue",
-      "predicted_intent": "return_refund"
-    },
-    {
-      "example_id": "gold_0083",
-      "message": "Had an email asking me to review an item I'm still waiting to receive.Then @115830 won't accept the review? So where's my items?",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "product_issue"
+      "predicted_intent": "prime_membership"
     },
     {
       "example_id": "gold_0085",
@@ -232,131 +136,77 @@
       "example_id": "gold_0086",
       "message": "Dear @115830 would it be possible to make your web interface not allow me to add products to the basket that won't ship to a given address, so that it is not a big disappointment during checkout? I mean, this used to work. I'm convinced it works in some cases, maybe not all.",
       "true_intent": "other",
-      "predicted_intent": "product_issue"
-    },
-    {
-      "example_id": "gold_0087",
-      "message": "@115830 Bought Konstsmide lights. Two 10 LED spirals, &amp; a 15 LED window lamp, all in brushed metal. All faulty, all bent, some broken LED’s &amp; 2 with dodgy connections. Not convinced they’re new, could have been used &amp; returned? Very Disappointed #Konstsmide #ChristmasLights #UK https://t.co/nb0s4klMIW",
-      "true_intent": "product_issue",
-      "predicted_intent": "return_refund"
+      "predicted_intent": "order_issue"
     },
     {
       "example_id": "gold_0088",
       "message": "What a horrible experience shopping with @115850. I’ve not received the product https://t.co/Qy61G4ztGI",
       "true_intent": "delivery_issue",
-      "predicted_intent": "product_issue"
+      "predicted_intent": "seller_marketplace"
     },
     {
       "example_id": "gold_0089",
       "message": "@115850 @115850 the cable is not working &amp; should be replaced as I already got an alternative from local market...",
       "true_intent": "return_refund",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0090",
-      "message": "@AmazonHelp Hola . Hice un pedido el día 1 de noviembre y aún estoy esperando fecha aproximada de entrega. Me gustaría saber si por este canal podéis darme alguna información más acerca de la fecha llegada del producto. Gracias",
-      "true_intent": "delivery_issue",
       "predicted_intent": "product_issue"
-    },
-    {
-      "example_id": "gold_0091",
-      "message": "@AmazonHelp @115850 I wasn't born on this earth to sit around waiting for you to ring the doorbell and pick up your defective items",
-      "true_intent": "return_refund",
-      "predicted_intent": "product_issue"
-    },
-    {
-      "example_id": "gold_0092",
-      "message": "@AmazonHelp @115850 U send a product which never switch on, and won't accept a return for it. What do want me to do with it? 1/2",
-      "true_intent": "product_issue",
-      "predicted_intent": "return_refund"
-    },
-    {
-      "example_id": "gold_0093",
-      "message": "@142947 @AmazonHelp It doesn't work on my Samsung TV anymore either",
-      "true_intent": "prime_video",
-      "predicted_intent": "other"
     },
     {
       "example_id": "gold_0094",
       "message": "@115850 \nMay I know the reason for which a product of 10 rs is being sold at 99 ?\n@131283 @120319 @144775 @120320 @734 https://t.co/zTBGjT88T9",
       "true_intent": "other",
-      "predicted_intent": "product_issue"
+      "predicted_intent": "promotion_offer"
     },
     {
       "example_id": "gold_0095",
       "message": "@115850 @115821  even this time they don't have any information about my product please don't buy anything from amazon they are cheater and fake company running ...",
       "true_intent": "delivery_issue",
-      "predicted_intent": "product_issue"
-    },
-    {
-      "example_id": "gold_0096",
-      "message": "@115850  Order ID  402-8641191-0869930. Received this damaged product and while trying to return only 'Replacement' option showing.",
-      "true_intent": "product_issue",
-      "predicted_intent": "return_refund"
-    },
-    {
-      "example_id": "gold_0097",
-      "message": "@AmazonHelp Is it possible to watch purchased films in different languages? We have a multilingual family. @116618",
-      "true_intent": "prime_video",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0106",
-      "message": "@AmazonHelp I'm literally watching you reply to more recent tweets than mine. Shameful. https://t.co/FkEMRxNHpP",
-      "true_intent": "customer_service",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0112",
-      "message": "@115825 Ab wann wird  #Outlander Staffel 3 in deutsch zu streamen sein? Kommt ja ab 8.11. schon im Fernsehen.",
-      "true_intent": "prime_video",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0132",
-      "message": "@115850 20 mails 7-8 tweets,  10-12 calls. Now not able to connect to ur call cntr.. What else do I need to get my refund?? Been 1 mnth nd 13 days since I canceled my order. @115851 @126033 @2156 #Amazon #BlackFridayDeals https://t.co/cjhHxw0uqW",
-      "true_intent": "return_refund",
       "predicted_intent": "order_issue"
+    },
+    {
+      "example_id": "gold_0109",
+      "message": "Hola @116928 mi suscripción a Prime incluye Amazon Video de forma permanente? O tendrá costes adicionales después del primer mes? No me queda claro en la publicidad. Gracias!",
+      "true_intent": "prime_video",
+      "predicted_intent": "prime_membership"
+    },
+    {
+      "example_id": "gold_0115",
+      "message": "@115850 @30889 @132037\nThis is how #Amazon cheat people \nThis time they can't deny that it has been done by the seller as the seller is none other than Cloudtail which everybody knows is Amazon's subsidiary\n#ThursdayThoughts\n#SagarikaGhatge\n#GCCS2017 https://t.co/bIko1qN2IF",
+      "true_intent": "seller_marketplace",
+      "predicted_intent": "customer_service"
+    },
+    {
+      "example_id": "gold_0123",
+      "message": "amazon refuse to provide invoice, seller refuse to provide bill...\nonly tarik pe tarik di ja rahi h..\n@AmazonHelp",
+      "true_intent": "seller_marketplace",
+      "predicted_intent": "order_issue"
+    },
+    {
+      "example_id": "gold_0126",
+      "message": "@115850 By \"sellers of india\", you mean congi+commie ecosystem?",
+      "true_intent": "seller_marketplace",
+      "predicted_intent": "other"
+    },
+    {
+      "example_id": "gold_0130",
+      "message": "@450852 @115850 @115821 100%. Compelled to use them at times because of their deals. But wouldn't if given a choice",
+      "true_intent": "promotion_offer",
+      "predicted_intent": "seller_marketplace"
     },
     {
       "example_id": "gold_0133",
       "message": "@AmazonHelp will the fire Tv 4k+echo dot bundle be available in germany? can't seem to find the bundle offer on the webpage",
       "true_intent": "promotion_offer",
-      "predicted_intent": "prime_video"
-    },
-    {
-      "example_id": "gold_0134",
-      "message": "When your #BlackFriday deals arrive from @115821. #amazon #amazonprime #primepets https://t.co/DTwTjSeyAo",
-      "true_intent": "promotion_offer",
-      "predicted_intent": "delivery_issue"
+      "predicted_intent": "other"
     },
     {
       "example_id": "gold_0135",
       "message": "@115821 just ruined my kid's 5th bday, said it's worth only a $10 credit &amp; offer ebooks she can't read for their errors.",
       "true_intent": "delivery_issue",
-      "predicted_intent": "promotion_offer"
+      "predicted_intent": "customer_service"
     },
     {
-      "example_id": "gold_0137",
-      "message": "@AmazonHelp why any negative feedback can't be published on your website? Is it a method to say you offer the best service at the world?",
-      "true_intent": "customer_service",
-      "predicted_intent": "promotion_offer"
-    },
-    {
-      "example_id": "gold_0139",
-      "message": "@AmazonHelp Oi, a promoção 3 Meses de Kindle Unlimited por R$ 1,99 ainda está disponível?",
-      "true_intent": "promotion_offer",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0143",
-      "message": "ae @117086 , vai rolar uma hyper promoção no kindle na black friday? to sedento por um pra estudar e por minha leitura em dia :(",
-      "true_intent": "promotion_offer",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0144",
-      "message": "Hola, @AmazonHelp he querido aprovechar la promo del Cumpleaños Pantry pero no se me han descontado los 10€, (mi compra era superior a 30€).",
+      "example_id": "gold_0138",
+      "message": "@115821 Thank you for the Black Friday and Cyber Monday Deals......almost done Christmas shopping now.....and I found a few good buys for me too!!   😋",
       "true_intent": "promotion_offer",
       "predicted_intent": "other"
     },
@@ -367,46 +217,28 @@
       "predicted_intent": "payment_issue"
     },
     {
-      "example_id": "gold_0147",
-      "message": "@115830 appalling customer service. Appalling delivery system. Two items apparently delivered but NOT. Why are there no supervisors or managers available? Prime membership seems to mean nothing to @115830",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "customer_service"
+      "example_id": "gold_0146",
+      "message": "@115850 One fladuent activity happen in my card from amazon at name of prime membership with transaction of 6850 rs",
+      "true_intent": "prime_membership",
+      "predicted_intent": "payment_issue"
     },
     {
-      "example_id": "gold_0148",
-      "message": "@AmazonHelp can you explain why every time I place a \"Prime\" order on a Friday \"next day\" is Monday!?.not what I pay #Prime membership for!!",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "prime_membership"
-    },
-    {
-      "example_id": "gold_0150",
-      "message": "Hey @115850 , I haven’t recd my ₹ 500 cash back on renewal of #AmazonPrime membership as promised in your promo email.",
-      "true_intent": "promotion_offer",
-      "predicted_intent": "prime_membership"
+      "example_id": "gold_0149",
+      "message": "@AmazonHelp  living in belgium I can pick amazon.de or .fr for a prime membership.  Is the movie / series selection and choice of languages based on my location or the country prime membership (.de or .fr) that I would pick? thanks",
+      "true_intent": "prime_membership",
+      "predicted_intent": "prime_video"
     },
     {
       "example_id": "gold_0151",
       "message": "I cancelled my #AmazonFresh subscription because some idiot in a sedan had a 15-minute panic attack in front of my house at 5 am over a bag of groceries with a broken handle.\n\nNope nope nope.\n\nhttps://t.co/7sLbo380nP",
       "true_intent": "customer_service",
-      "predicted_intent": "product_issue"
-    },
-    {
-      "example_id": "gold_0152",
-      "message": "@AmazonHelp hi can you confirm that if i order a copy of reputation with a prime membership it will be delivered on friday and there won't be any changes to the release date",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "prime_membership"
+      "predicted_intent": "delivery_issue"
     },
     {
       "example_id": "gold_0153",
       "message": "@AmazonHelp I need your help. I don’t have amazon prime is this legit saying about renewing my subscription? And asking me all this details https://t.co/Iy0iSSvP4i",
       "true_intent": "prime_membership",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0155",
-      "message": "@115821 I am appalled at your prime membership. 2 items undelivered and only solution is to extend my membership. 30 mins of my time wasted.",
-      "true_intent": "delivery_issue",
-      "predicted_intent": "prime_membership"
+      "predicted_intent": "account_access"
     },
     {
       "example_id": "gold_0156",
@@ -415,76 +247,46 @@
       "predicted_intent": "prime_video"
     },
     {
-      "example_id": "gold_0159",
-      "message": "Give up with @115830 😑 I pay for Prime for What? Just to get messed around with my deliveries? Think I'll be cancelling my membership! 😠😞",
-      "true_intent": "prime_membership",
-      "predicted_intent": "other"
-    },
-    {
       "example_id": "gold_0161",
       "message": "@115821 Thank you for refusing my payments since 2 days. First you started with our company (Acc Balance &gt; 230K EUR) and now my private one. I am Customer since 1998 and all I got as explanation was a useless mail-template. Thank you for NO support! Long-term customer no value?",
       "true_intent": "customer_service",
-      "predicted_intent": "delivery_issue"
+      "predicted_intent": "payment_issue"
+    },
+    {
+      "example_id": "gold_0166",
+      "message": "It's rare to have a complaint about @115821 but their packaging could have been a bit more discreet #luckilykidshaveshortmemories https://t.co/LoTAOXTUXR",
+      "true_intent": "customer_service",
+      "predicted_intent": "product_issue"
     },
     {
       "example_id": "gold_0167",
       "message": "@115821 for you all to be such a large company you need better call center representatives. I'm so close to cancelling my prime renewal, I should not be on hold for an hour to rectify a problem you all caused",
       "true_intent": "customer_service",
-      "predicted_intent": "other"
+      "predicted_intent": "prime_membership"
     },
     {
       "example_id": "gold_0169",
       "message": "@115821 @115851 73 minutes on the phone with customer support and all that was accomplished was the rep promising that a return label will be created for an item that has not been delivered. I will never get that time back.",
       "true_intent": "customer_service",
-      "predicted_intent": "delivery_issue"
-    },
-    {
-      "example_id": "gold_0170",
-      "message": "@115851 #jeffbezos Need your help sir,customer service @2005 is not providing solution, recieved soap instead of a phone worth 33k",
-      "true_intent": "product_issue",
-      "predicted_intent": "customer_service"
+      "predicted_intent": "return_refund"
     },
     {
       "example_id": "gold_0171",
       "message": "@115850 no follow from amazon on outstanding issue of no cost emi. Blaiming bank. Escalated to voice of customer but no resolution",
       "true_intent": "customer_service",
-      "predicted_intent": "delivery_issue"
-    },
-    {
-      "example_id": "gold_0172",
-      "message": "@115850 I have complaint my amazon balance I s there but I cannot buy",
-      "true_intent": "payment_issue",
-      "predicted_intent": "customer_service"
-    },
-    {
-      "example_id": "gold_0173",
-      "message": "I just want to congratulate @115821 for it’s shitty customer service.\nThey make a mistake and make me pay for it.\nTwo months in a row.\n#fail",
-      "true_intent": "customer_service",
-      "predicted_intent": "delivery_issue"
-    },
-    {
-      "example_id": "gold_0174",
-      "message": "This is my third @115821 fire stick from @127271, each one gave me this message. Amazon customer support tell me to keep exchanging them... @AmazonHelp @138244 https://t.co/eP7mc8Zy8O",
-      "true_intent": "product_issue",
-      "predicted_intent": "prime_video"
-    },
-    {
-      "example_id": "gold_0176",
-      "message": "So @115821 refers me 2 seller, seller says I have escalated issue to Amazon. Round n round we go. Slow clap. Well done!",
-      "true_intent": "seller_marketplace",
-      "predicted_intent": "delivery_issue"
+      "predicted_intent": "payment_issue"
     },
     {
       "example_id": "gold_0177",
       "message": "Why is there an amazon warehouse in town yet i cannot get Prime Now service?",
       "true_intent": "delivery_issue",
-      "predicted_intent": "other"
+      "predicted_intent": "prime_membership"
     },
     {
-      "example_id": "gold_0180",
-      "message": "@115850 want to join Amazon Prime, searched on google , you people showing ads for Rs499 insides it says Rs999! #Amazon  #AmazonPrime https://t.co/ftRcmXyR24",
-      "true_intent": "prime_membership",
-      "predicted_intent": "other"
+      "example_id": "gold_0181",
+      "message": "@1384\nPlease look into this &amp; solve this asap https://t.co/K0wnvO2DRv",
+      "true_intent": "other",
+      "predicted_intent": "product_issue"
     },
     {
       "example_id": "gold_0182",
@@ -496,13 +298,7 @@
       "example_id": "gold_0183",
       "message": "Since when does the MRP being reflected at @115850 become this much. Should this be not considered cheating and Fraud. https://t.co/FS5nnnFXZM",
       "true_intent": "payment_issue",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0185",
-      "message": "I'm over the fire stick. 🙄 @115821 #WorseBuyEver",
-      "true_intent": "product_issue",
-      "predicted_intent": "prime_video"
+      "predicted_intent": "seller_marketplace"
     },
     {
       "example_id": "gold_0186",
@@ -517,10 +313,10 @@
       "predicted_intent": "delivery_issue"
     },
     {
-      "example_id": "gold_0191",
-      "message": "@116928 @AmazonHelp Si me llega un pedido que no quiero, y lo rechazo, me devuelven el dinero?",
-      "true_intent": "return_refund",
-      "predicted_intent": "other"
+      "example_id": "gold_0190",
+      "message": "What’s going on guys ? @AmazonHelp https://t.co/uLiSjx1lRA",
+      "true_intent": "other",
+      "predicted_intent": "delivery_issue"
     },
     {
       "example_id": "gold_0192",
@@ -532,151 +328,49 @@
       "example_id": "gold_0193",
       "message": "Amazonの配送の人に関しての苦情ってどこに入れたら良いんだろうか…。",
       "true_intent": "customer_service",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0195",
-      "message": "このショートメールは詐欺らしい\n\nアマゾン登録ないからおかしいと思ったが\n\n番号載せてるから仕方ないけど\n気をつけないとな\n\n#詐欺 #アマゾン https://t.co/4zvtoaLr1d",
-      "true_intent": "account_access",
-      "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0196",
-      "message": "hv bn facing 2 many 'technical glitches' w @115850 lately, specially w payments.whereas @118702 hs bn buttr smooth. nvr thot it wd happn",
-      "true_intent": "payment_issue",
       "predicted_intent": "delivery_issue"
     },
     {
-      "example_id": "gold_0198",
-      "message": "Fml I just accidentally signed up for amazon prime 😒",
-      "true_intent": "prime_membership",
-      "predicted_intent": "other"
+      "example_id": "gold_0194",
+      "message": "Need assistance what to do next @115850 https://t.co/faaafMSPR3",
+      "true_intent": "other",
+      "predicted_intent": "delivery_issue"
     },
     {
       "example_id": "gold_0199",
       "message": "@120474 Do you do disabled tickets on Pre-sales?",
       "true_intent": "order_issue",
       "predicted_intent": "other"
-    },
-    {
-      "example_id": "gold_0200",
-      "message": "@115850 When will you announce guess the phone contest..",
-      "true_intent": "promotion_offer",
-      "predicted_intent": "other"
     }
   ],
   "routing_errors": [
     {
-      "example_id": "gold_0003",
-      "message": "@115851 amazon leaves bag of packages in parking lot. Trying to return them to Amazon. Help",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
+      "example_id": "gold_0002",
+      "message": "@259896 I really don't like showing frustration on twitter, but come on #Amazon. I need a reason as to why it was delayed 2 (1/2)",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     },
     {
-      "example_id": "gold_0004",
-      "message": "Hey @115821 my @1511 got delivered today. I wasn’t home. Local dog destroyed it. What do I do?  Everything shredded.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
+      "example_id": "gold_0007",
+      "message": "@AmazonHelp why was my prime package delayed and now expected to take 3-4 days???? #wtf this happens way too often",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     },
     {
-      "example_id": "gold_0005",
-      "message": "Still no delivery date to the item I pre-ordered, that came out yesterday @115830 😔 \n\nReally unimpressed. https://t.co/fjqrgt3Ybe",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
+      "example_id": "gold_0008",
+      "message": "@115830 I think you got a bug, in my orders it shows that the item will be delivered on Monday, but when I click on Track Package, it states that the item will be delivered on Sunday! So when should I expect it? Sunday, Monday?",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     },
     {
-      "example_id": "gold_0009",
-      "message": "Our order no 408-1778399-6665929 never delivered to us and your app is also showing that it supposed to deliver soon.#AmazonIndia 1-",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0010",
-      "message": "@115830 So I ordered a @61527 to be delivered to Malta but it gets delivered by @1713 to an address in Germany instead?!",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0011",
-      "message": "@115850 Need some help regarding order # D01-1078442-3663061. The wrong book was delivered to my Kindle.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0013",
-      "message": "@AmazonHelp Well done Amazon. Package delivered to a porch we do not have. 24 hours to investigate. Seriously the shittiest customer service going. Should be proud. Multinational company cannot devlier a package",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0014",
-      "message": "Earlier issue was of delivery now it's of product that they deliver. Ordered case for iphone 8 plus got for 7 plus @115850 @AmazonHelp https://t.co/HcUCv3ON5E",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0015",
-      "message": "Waited yesterday but didn't receive. Today morning I get a message that it was delivered last night!! Still not received. @AmazonHelp https://t.co/N6BMhWAIsO",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0016",
-      "message": "#IndiasMostFearless gr8 book! got it thru @115850, guys Amazon's delivery and CS is pathetic. Be careful! U may consider sme other options",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0017",
-      "message": "@AmazonHelp Hi I want to cancel one return order.. as my product has started working properly now. please help",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0018",
-      "message": "Hey @115821 I live in an ancient apartment that is in no way gated or secure so how about you leave my $7 roll of contact paper on the front step instead of doing this every single time I order something https://t.co/IQZb64LOi0",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0019",
-      "message": "@115830 pre-ordered CoD WW2 on the 5th july, says today it won’t be delivered until 4th Nov, the day after release? Why is this?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0020",
-      "message": "@115850,dear sir, order id:404-4313025-2413959 in India not solved refund issue since four months by amazon India,please......@115851",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0021",
-      "message": "@AmazonHelp hey! Order was due by 8pm, it's now 9:30pm and nothing. Not sure what to do? 🤔🤔",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
+      "example_id": "gold_0012",
+      "message": "@121284 I have ordered it but why so late delivery (Nov)\n?\nCan I get it in Diwali ?\n#AskAlexa",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     },
     {
       "example_id": "gold_0022",
       "message": "@115850 ORDER # 403-4691279-3840353 want to return. Initiated through website but this appears as message. What next? https://t.co/ivDr5DkOHZ",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0023",
-      "message": "Hello @115850 I have ordered an phone from your website in offer of exchange my previous phone.Your executive has cancelled my order (con)",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0024",
-      "message": "@115850 ordered LED light with 2 roll of 50 meter each as written in description but received only one roll of 50 meter yellow https://t.co/Ar7f0dLhjp",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0026",
-      "message": "Wow, @115821 Canada just billed me (again) for an order that I had paid for in August and received in Sept. #WTF #CustomerService",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -687,80 +381,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0028",
-      "message": "@115851 @115821 Previous order https://t.co/Wz64ig1aHh",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0029",
-      "message": "@115830 Order number 204-0062763-9514739 states posts through letterbox. I've been home all day, no post.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0030",
-      "message": "@115850 I had ordered a product through Amazon 20 days back.!Neither the product is received,nor the refund is initiated as per request.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0031",
-      "message": "When @115830 manage to fuck up an order for a second time in less than 3 weeks. Top notch, will avoid again 👌🏻",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0032",
-      "message": "@115850 Recently I've experienced some inconvenience from Amazon team regarding my order. Such rare thing to see from them. Really disappointed for such treatment. I request them to see into my matter.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0033",
-      "message": "@AmazonHelp @115850 no update yet! It’d be better if had applied for a refund. https://t.co/xom0bgQCPZ",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0034",
-      "message": "@115850 says order return approved, but i dont see refund in my account. @227916 https://t.co/1q8t4dBi87",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0035",
-      "message": "@115850 @115821 Do u all take this much time with every customer? Even after all these things, u people r still on discussing mode, documenting mode!! If u all don't want to refund, pls mention!! Don't harass unnecessary!! Got plenty of things to do!!",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0036",
       "message": "@115850 Again I got a message of refund initiated..I dnt hw ur system works @115850 u dnt take chance to cal or giv chnce to cal..u play on pc",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0037",
-      "message": "Dear @AmazonHelp @115830 2 broken desks delivered &amp; now your customer has to pay the return costs, organise the return and oh, there's a refund process... Very poor customer service for the company that is supposedly all about convenience &amp; service #CX #ecommerce #BlackFriday",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0039",
-      "message": "@115850 didn't receive refund amount as of yet... Please help me...",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0041",
-      "message": "@AmazonHelp @115850 they will call me soon but never did. please refund the amount ASAP.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0042",
-      "message": "@115850 #JEFFBEZOS  Returned a product on 27th aug. Refund not yet received.Thank u fr keeping the money with u.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -771,176 +393,14 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0044",
-      "message": "@115821 @AmazonHelp Why would you even bother sending a warped LP? I want my money back or the same LP sent again. Im not sending this back. https://t.co/BhwVvgXPCw",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0045",
-      "message": "@115850 R u kidding, Rs. 1780 exchange for a 29k phone which got lauched just few months back? https://t.co/siY6sACUbY",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0046",
-      "message": "@AmazonHelp I have ordered a washing machine on great Indian festival on exchange of old. But the new one's defective, initiated a return.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0047",
       "message": "@115833 @126972 My Amazon Echo plus return initiated within 24 hours. Do you have some in house quality check on speakers? Never heard such worst speaker",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0048",
-      "message": "@AmazonHelp 911145717213 raised return.. Was told tht technician wld visit within 48hrs..no sign of him after 60hrs!",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0049",
-      "message": "@115821 why did amazon take my AMEX points if I cancelled my order. Card never charged but you took 7,000+pts Now don’t want to give back.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0052",
-      "message": "@115850 my payment was failed twice ,tho second tme pymnt was deducted.404-3735740-2619510 .#amazonbadservice",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0053",
-      "message": "@AmazonHelp need help getting a refund on Amazon Seller charge. Please advise",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0054",
-      "message": "The import fees by @115821 is high and does match one charged in India. Its arbitrary and non-transparent.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0055",
-      "message": "Hey @AmazonHelp I have a regular Amazon payment coming out of my account which looks like a Prime payment I haven't signed up for. Who can I",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0056",
-      "message": "Excuse me @115830  but why has this not dispatched? It's releasing TODAY @AmazonHelp https://t.co/42VCoD5GI1",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0059",
-      "message": "I've recharged my number using #amazon_pay but I didn't get any confirmation from my subscriber so far &amp; customer care executive told me that they didn't get any amount from Amazon against my recharge, please fix the issue @AmazonHelp @115850 https://t.co/S8vRh21Xil",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0060",
       "message": "Amazon charged me twice 😒",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0061",
-      "message": "@AmazonHelp I cont rechargeing  any number. I m getting problem. please solve it https://t.co/8CG3liATI6",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0062",
-      "message": "Amazon is not giving satisfactory answer to refund the amount paid by me for the mob one plus 5 and  doing not a kid and  giving  stereo type  reply despite my best follow up by mails and calls.   Amazon  cheating  innocent people who are becoming  vicitems  of  their cheating",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0063",
-      "message": "@115850 I have not received my Vodafone OptIn SMS, I had purchased Redmi 4 Phone also I had done recharge of 1 GB from Amazon Pay",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0064",
-      "message": "@115850 while purchasing I was shown Lightening deal price but I was charged the original price at checkout. #cheating",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0067",
-      "message": "Hey @AmazonHelp, I think you have a problem... I'm not Ann, and I got an email yesterday saying thank you for activating my FireTV stick, that I hadn't yet taken out of the box, so I assume someone now has one attached to my account. #amazon #fail #badsecurity https://t.co/vI6MYW4fGH",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0068",
-      "message": "Ugh. Just got home, my 15 year-old son tells me that someone stole $150+ that was in his Amazon account.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0069",
-      "message": "@115851 my Amazonid is __email__ is blocked since 3months please unblock it.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0070",
-      "message": "@115850 @AmazonHelp hey my number is blocked in your system I have requested you to unblock the same in past 2 months but not resolved https://t.co/56QVf5mLIO",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0071",
-      "message": "Wtf amazon took $110 out my account and I never use amazon",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0072",
-      "message": "@AmazonHelp please resolve my account ossue whatever it is or else i am not going to take ur product which i m going to.receive tommrow return my money and keep ur account with u sorry to say will switch to.flipkart",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0073",
-      "message": "Gee, thanks for suddenly wanting me to enter a random code that you sent to my old phone without reason, @115830 .\nI sold that phone.\nAnd the password was correct.\nBut you know.\nGood job.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0074",
-      "message": "@115821 how can I update my email address? I've gone through it a dozen times with a dozen passwords and I get this. https://t.co/CoAW8igTO4",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0076",
-      "message": "@AmazonHelp am trying to use my U.K account in Poland I am getting told I will be emailed to verify my identity no emails tried since yest",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0077",
-      "message": "So my @AmazonHelp order says delivered and that it was left in my (locked) mailbox at my apartment. It’s not there.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0078",
-      "message": "@115821 decided to put amazon prime on my account without permission smh I’m not paying for something I absolutely don’t want",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0079",
-      "message": "@AmazonHelp I can’t log into my account. I’ve tried changing my password but it still says incorrect password every time. I need to access it because I bought an amazon egift card and I still haven’t received it.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -957,68 +417,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0083",
-      "message": "Had an email asking me to review an item I'm still waiting to receive.Then @115830 won't accept the review? So where's my items?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0084",
-      "message": "@116090 Once again, replacement products for previously damaged items; 50% of the items damaged originally, so far 50% damaged again.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0087",
-      "message": "@115830 Bought Konstsmide lights. Two 10 LED spirals, &amp; a 15 LED window lamp, all in brushed metal. All faulty, all bent, some broken LED’s &amp; 2 with dodgy connections. Not convinced they’re new, could have been used &amp; returned? Very Disappointed #Konstsmide #ChristmasLights #UK https://t.co/nb0s4klMIW",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0088",
-      "message": "What a horrible experience shopping with @115850. I’ve not received the product https://t.co/Qy61G4ztGI",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0089",
-      "message": "@115850 @115850 the cable is not working &amp; should be replaced as I already got an alternative from local market...",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0090",
-      "message": "@AmazonHelp Hola . Hice un pedido el día 1 de noviembre y aún estoy esperando fecha aproximada de entrega. Me gustaría saber si por este canal podéis darme alguna información más acerca de la fecha llegada del producto. Gracias",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0091",
-      "message": "@AmazonHelp @115850 I wasn't born on this earth to sit around waiting for you to ring the doorbell and pick up your defective items",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0092",
-      "message": "@AmazonHelp @115850 U send a product which never switch on, and won't accept a return for it. What do want me to do with it? 1/2",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0094",
       "message": "@115850 \nMay I know the reason for which a product of 10 rs is being sold at 99 ?\n@131283 @120319 @144775 @120320 @734 https://t.co/zTBGjT88T9",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0095",
-      "message": "@115850 @115821  even this time they don't have any information about my product please don't buy anything from amazon they are cheater and fake company running ...",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0096",
-      "message": "@115850  Order ID  402-8641191-0869930. Received this damaged product and while trying to return only 'Replacement' option showing.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1029,20 +429,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0106",
-      "message": "@AmazonHelp I'm literally watching you reply to more recent tweets than mine. Shameful. https://t.co/FkEMRxNHpP",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0113",
       "message": "I don't understand why @115821 keeps a 3rd parry seller who is clearly a scammer. 10%positive reviews this year! Still have not gotten stuff",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0114",
-      "message": "purchased 4 HP cartridges from a seller on @115830 some of them unto 6 years out of date. Heres hoping that Amazon sort this out. #disgraceful #seller",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1071,134 +459,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0121",
-      "message": "@273615 @216231 @115821 This had to be a private seller it’s not shipped from the amazon warehouse it’s from a in Home seller.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0122",
-      "message": "@AmazonHelp Bought 2 phones in Dec. Found out they are counterfeit &amp; don't work. Seller closed acct. &amp; took my $500. Amazon CS is NO help :(",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0123",
-      "message": "amazon refuse to provide invoice, seller refuse to provide bill...\nonly tarik pe tarik di ja rahi h..\n@AmazonHelp",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0125",
-      "message": "Coming up on a month now of odd spam emails, turned vehement harassment, threats from @116090 seller. All due to honest review. Unreal.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0127",
-      "message": "@115821 by the side of the sellers!\nThanks froma let down BUYER. Tried 4 TIMES to demonstrate how incorrect was a seller and YOUJUSTDONTCARE",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0128",
-      "message": "@123288 see how @115850  cheats in sale day same seller same process @115851 https://t.co/EFB8eztNEv",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0129",
-      "message": "@115850 Guys, be aware of Amazon's cheating practices that they are doing in the name of their cashback schemes. No cash back received yet",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0130",
-      "message": "@450852 @115850 @115821 100%. Compelled to use them at times because of their deals. But wouldn't if given a choice",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0132",
-      "message": "@115850 20 mails 7-8 tweets,  10-12 calls. Now not able to connect to ur call cntr.. What else do I need to get my refund?? Been 1 mnth nd 13 days since I canceled my order. @115851 @126033 @2156 #Amazon #BlackFridayDeals https://t.co/cjhHxw0uqW",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0135",
-      "message": "@115821 just ruined my kid's 5th bday, said it's worth only a $10 credit &amp; offer ebooks she can't read for their errors.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0136",
-      "message": "@115821 dear amazon the mobile price of redmi 4 is 10999 and u gave 14% discount then it should be -1539.86 \nThen 10999-1540 =9460 https://t.co/vMyN9jGpPE",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0137",
       "message": "@AmazonHelp why any negative feedback can't be published on your website? Is it a method to say you offer the best service at the world?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0140",
-      "message": "Amazon cheated me.haven'tgiven eligible cashback.Following up for 3 wks now.they r jst ignoring it.dnt go 4 it@amazonIN @115821 @AmazonHelp",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0141",
-      "message": "Why have @AmazonHelp now taken their student discount off? Great, wanted to spend £80 on 3 books👍🏻👍🏻👍🏻",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0144",
-      "message": "Hola, @AmazonHelp he querido aprovechar la promo del Cumpleaños Pantry pero no se me han descontado los 10€, (mi compra era superior a 30€).",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0145",
-      "message": "@AmazonHelp you charged my car twice for my prime membership?? What's up, fam?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0146",
-      "message": "@115850 One fladuent activity happen in my card from amazon at name of prime membership with transaction of 6850 rs",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0150",
-      "message": "Hey @115850 , I haven’t recd my ₹ 500 cash back on renewal of #AmazonPrime membership as promised in your promo email.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0151",
-      "message": "I cancelled my #AmazonFresh subscription because some idiot in a sedan had a 15-minute panic attack in front of my house at 5 am over a bag of groceries with a broken handle.\n\nNope nope nope.\n\nhttps://t.co/7sLbo380nP",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0153",
-      "message": "@AmazonHelp I need your help. I don’t have amazon prime is this legit saying about renewing my subscription? And asking me all this details https://t.co/Iy0iSSvP4i",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0154",
-      "message": "Today @115821 canceled my prepaid Prime membership without asking or permission.  They refused to reinstate it- telling me I had to re-enroll. I'll be switching to Walmart and their free 2 day shipping with $0 membership.  @115851 @Walmart",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0155",
-      "message": "@115821 I am appalled at your prime membership. 2 items undelivered and only solution is to extend my membership. 30 mins of my time wasted.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1209,20 +471,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0159",
-      "message": "Give up with @115830 😑 I pay for Prime for What? Just to get messed around with my deliveries? Think I'll be cancelling my membership! 😠😞",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0160",
       "message": "False promises for prime members #AmazonIN #JeffBezos",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0161",
-      "message": "@115821 Thank you for refusing my payments since 2 days. First you started with our company (Acc Balance &gt; 230K EUR) and now my private one. I am Customer since 1998 and all I got as explanation was a useless mail-template. Thank you for NO support! Long-term customer no value?",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1233,92 +483,14 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0163",
-      "message": "2 weeks of frustration with @115830, customer support is appalling. Constantly told I would be contacted in 24-48hrs. Never happens.#angry",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0165",
-      "message": "@115821 @AmazonHelp @115851 Ofcourse Amazon doesnt consider it professional enuff fr delivery agent to hve commonsense to call n fix a slot.2/3",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0167",
-      "message": "@115821 for you all to be such a large company you need better call center representatives. I'm so close to cancelling my prime renewal, I should not be on hold for an hour to rectify a problem you all caused",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0168",
-      "message": "@115850 #AmazonIndia Your delivery agent's number provided by you does not exist. How to harassed customers get their products?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0169",
-      "message": "@115821 @115851 73 minutes on the phone with customer support and all that was accomplished was the rep promising that a return label will be created for an item that has not been delivered. I will never get that time back.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0170",
-      "message": "@115851 #jeffbezos Need your help sir,customer service @2005 is not providing solution, recieved soap instead of a phone worth 33k",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0172",
-      "message": "@115850 I have complaint my amazon balance I s there but I cannot buy",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0173",
-      "message": "I just want to congratulate @115821 for it’s shitty customer service.\nThey make a mistake and make me pay for it.\nTwo months in a row.\n#fail",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0178",
-      "message": "@AmazonHelp One minute its at the hub next its out for delivery next its at the hub again.No clear answers on where my items are",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0181",
-      "message": "@1384\nPlease look into this &amp; solve this asap https://t.co/K0wnvO2DRv",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0182",
       "message": "アマゾンからショートメールで\n有料サイト使用による未納料金が発生してる\n的な詐欺ショートメール来た！アマゾン使ってない！！！ｗｗｗ",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0183",
-      "message": "Since when does the MRP being reflected at @115850 become this much. Should this be not considered cheating and Fraud. https://t.co/FS5nnnFXZM",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0184",
-      "message": "@AmazonHelp I'm trying to deal with your terrible courier service (intelcom) that keeps hanging up on me. How do I proceed? I spent a lot on 2 day service... last week.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0189",
-      "message": "#AmazonBuyUs #AMAZON SUCKS! YOUR CHAT USELESS &amp; YOUR \"CUSTOMER SERVICE\" BITCH HUNG UP ON ME AFTER WAITING OVER 12 HOURS 4 NO PACKAGE 🖕🏽🖕🏽🖕🏽",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0190",
-      "message": "What’s going on guys ? @AmazonHelp https://t.co/uLiSjx1lRA",
+      "example_id": "gold_0186",
+      "message": "Dear @AmazonHelp, Which option should I select for an item that wasn't delivered (but its packaging was) 😂. #ijustwantmysnakebracelet https://t.co/kFLHTNFEUP",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1341,124 +513,16 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0196",
-      "message": "hv bn facing 2 many 'technical glitches' w @115850 lately, specially w payments.whereas @118702 hs bn buttr smooth. nvr thot it wd happn",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
+      "example_id": "gold_0198",
+      "message": "Fml I just accidentally signed up for amazon prime 😒",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     }
   ],
   "routing_false_negatives": [
     {
-      "example_id": "gold_0003",
-      "message": "@115851 amazon leaves bag of packages in parking lot. Trying to return them to Amazon. Help",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0004",
-      "message": "Hey @115821 my @1511 got delivered today. I wasn’t home. Local dog destroyed it. What do I do?  Everything shredded.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0005",
-      "message": "Still no delivery date to the item I pre-ordered, that came out yesterday @115830 😔 \n\nReally unimpressed. https://t.co/fjqrgt3Ybe",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0009",
-      "message": "Our order no 408-1778399-6665929 never delivered to us and your app is also showing that it supposed to deliver soon.#AmazonIndia 1-",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0010",
-      "message": "@115830 So I ordered a @61527 to be delivered to Malta but it gets delivered by @1713 to an address in Germany instead?!",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0011",
-      "message": "@115850 Need some help regarding order # D01-1078442-3663061. The wrong book was delivered to my Kindle.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0013",
-      "message": "@AmazonHelp Well done Amazon. Package delivered to a porch we do not have. 24 hours to investigate. Seriously the shittiest customer service going. Should be proud. Multinational company cannot devlier a package",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0014",
-      "message": "Earlier issue was of delivery now it's of product that they deliver. Ordered case for iphone 8 plus got for 7 plus @115850 @AmazonHelp https://t.co/HcUCv3ON5E",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0015",
-      "message": "Waited yesterday but didn't receive. Today morning I get a message that it was delivered last night!! Still not received. @AmazonHelp https://t.co/N6BMhWAIsO",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0016",
-      "message": "#IndiasMostFearless gr8 book! got it thru @115850, guys Amazon's delivery and CS is pathetic. Be careful! U may consider sme other options",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0017",
-      "message": "@AmazonHelp Hi I want to cancel one return order.. as my product has started working properly now. please help",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0018",
-      "message": "Hey @115821 I live in an ancient apartment that is in no way gated or secure so how about you leave my $7 roll of contact paper on the front step instead of doing this every single time I order something https://t.co/IQZb64LOi0",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0019",
-      "message": "@115830 pre-ordered CoD WW2 on the 5th july, says today it won’t be delivered until 4th Nov, the day after release? Why is this?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0020",
-      "message": "@115850,dear sir, order id:404-4313025-2413959 in India not solved refund issue since four months by amazon India,please......@115851",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0021",
-      "message": "@AmazonHelp hey! Order was due by 8pm, it's now 9:30pm and nothing. Not sure what to do? 🤔🤔",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0022",
       "message": "@115850 ORDER # 403-4691279-3840353 want to return. Initiated through website but this appears as message. What next? https://t.co/ivDr5DkOHZ",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0023",
-      "message": "Hello @115850 I have ordered an phone from your website in offer of exchange my previous phone.Your executive has cancelled my order (con)",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0024",
-      "message": "@115850 ordered LED light with 2 roll of 50 meter each as written in description but received only one roll of 50 meter yellow https://t.co/Ar7f0dLhjp",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0026",
-      "message": "Wow, @115821 Canada just billed me (again) for an order that I had paid for in August and received in Sept. #WTF #CustomerService",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1469,80 +533,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0028",
-      "message": "@115851 @115821 Previous order https://t.co/Wz64ig1aHh",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0029",
-      "message": "@115830 Order number 204-0062763-9514739 states posts through letterbox. I've been home all day, no post.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0030",
-      "message": "@115850 I had ordered a product through Amazon 20 days back.!Neither the product is received,nor the refund is initiated as per request.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0031",
-      "message": "When @115830 manage to fuck up an order for a second time in less than 3 weeks. Top notch, will avoid again 👌🏻",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0032",
-      "message": "@115850 Recently I've experienced some inconvenience from Amazon team regarding my order. Such rare thing to see from them. Really disappointed for such treatment. I request them to see into my matter.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0033",
-      "message": "@AmazonHelp @115850 no update yet! It’d be better if had applied for a refund. https://t.co/xom0bgQCPZ",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0034",
-      "message": "@115850 says order return approved, but i dont see refund in my account. @227916 https://t.co/1q8t4dBi87",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0035",
-      "message": "@115850 @115821 Do u all take this much time with every customer? Even after all these things, u people r still on discussing mode, documenting mode!! If u all don't want to refund, pls mention!! Don't harass unnecessary!! Got plenty of things to do!!",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0036",
       "message": "@115850 Again I got a message of refund initiated..I dnt hw ur system works @115850 u dnt take chance to cal or giv chnce to cal..u play on pc",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0037",
-      "message": "Dear @AmazonHelp @115830 2 broken desks delivered &amp; now your customer has to pay the return costs, organise the return and oh, there's a refund process... Very poor customer service for the company that is supposedly all about convenience &amp; service #CX #ecommerce #BlackFriday",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0039",
-      "message": "@115850 didn't receive refund amount as of yet... Please help me...",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0041",
-      "message": "@AmazonHelp @115850 they will call me soon but never did. please refund the amount ASAP.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0042",
-      "message": "@115850 #JEFFBEZOS  Returned a product on 27th aug. Refund not yet received.Thank u fr keeping the money with u.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1553,176 +545,14 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0044",
-      "message": "@115821 @AmazonHelp Why would you even bother sending a warped LP? I want my money back or the same LP sent again. Im not sending this back. https://t.co/BhwVvgXPCw",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0045",
-      "message": "@115850 R u kidding, Rs. 1780 exchange for a 29k phone which got lauched just few months back? https://t.co/siY6sACUbY",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0046",
-      "message": "@AmazonHelp I have ordered a washing machine on great Indian festival on exchange of old. But the new one's defective, initiated a return.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0047",
       "message": "@115833 @126972 My Amazon Echo plus return initiated within 24 hours. Do you have some in house quality check on speakers? Never heard such worst speaker",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0048",
-      "message": "@AmazonHelp 911145717213 raised return.. Was told tht technician wld visit within 48hrs..no sign of him after 60hrs!",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0049",
-      "message": "@115821 why did amazon take my AMEX points if I cancelled my order. Card never charged but you took 7,000+pts Now don’t want to give back.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0052",
-      "message": "@115850 my payment was failed twice ,tho second tme pymnt was deducted.404-3735740-2619510 .#amazonbadservice",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0053",
-      "message": "@AmazonHelp need help getting a refund on Amazon Seller charge. Please advise",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0054",
-      "message": "The import fees by @115821 is high and does match one charged in India. Its arbitrary and non-transparent.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0055",
-      "message": "Hey @AmazonHelp I have a regular Amazon payment coming out of my account which looks like a Prime payment I haven't signed up for. Who can I",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0056",
-      "message": "Excuse me @115830  but why has this not dispatched? It's releasing TODAY @AmazonHelp https://t.co/42VCoD5GI1",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0059",
-      "message": "I've recharged my number using #amazon_pay but I didn't get any confirmation from my subscriber so far &amp; customer care executive told me that they didn't get any amount from Amazon against my recharge, please fix the issue @AmazonHelp @115850 https://t.co/S8vRh21Xil",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0060",
       "message": "Amazon charged me twice 😒",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0061",
-      "message": "@AmazonHelp I cont rechargeing  any number. I m getting problem. please solve it https://t.co/8CG3liATI6",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0062",
-      "message": "Amazon is not giving satisfactory answer to refund the amount paid by me for the mob one plus 5 and  doing not a kid and  giving  stereo type  reply despite my best follow up by mails and calls.   Amazon  cheating  innocent people who are becoming  vicitems  of  their cheating",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0063",
-      "message": "@115850 I have not received my Vodafone OptIn SMS, I had purchased Redmi 4 Phone also I had done recharge of 1 GB from Amazon Pay",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0064",
-      "message": "@115850 while purchasing I was shown Lightening deal price but I was charged the original price at checkout. #cheating",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0067",
-      "message": "Hey @AmazonHelp, I think you have a problem... I'm not Ann, and I got an email yesterday saying thank you for activating my FireTV stick, that I hadn't yet taken out of the box, so I assume someone now has one attached to my account. #amazon #fail #badsecurity https://t.co/vI6MYW4fGH",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0068",
-      "message": "Ugh. Just got home, my 15 year-old son tells me that someone stole $150+ that was in his Amazon account.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0069",
-      "message": "@115851 my Amazonid is __email__ is blocked since 3months please unblock it.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0070",
-      "message": "@115850 @AmazonHelp hey my number is blocked in your system I have requested you to unblock the same in past 2 months but not resolved https://t.co/56QVf5mLIO",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0071",
-      "message": "Wtf amazon took $110 out my account and I never use amazon",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0072",
-      "message": "@AmazonHelp please resolve my account ossue whatever it is or else i am not going to take ur product which i m going to.receive tommrow return my money and keep ur account with u sorry to say will switch to.flipkart",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0073",
-      "message": "Gee, thanks for suddenly wanting me to enter a random code that you sent to my old phone without reason, @115830 .\nI sold that phone.\nAnd the password was correct.\nBut you know.\nGood job.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0074",
-      "message": "@115821 how can I update my email address? I've gone through it a dozen times with a dozen passwords and I get this. https://t.co/CoAW8igTO4",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0076",
-      "message": "@AmazonHelp am trying to use my U.K account in Poland I am getting told I will be emailed to verify my identity no emails tried since yest",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0077",
-      "message": "So my @AmazonHelp order says delivered and that it was left in my (locked) mailbox at my apartment. It’s not there.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0078",
-      "message": "@115821 decided to put amazon prime on my account without permission smh I’m not paying for something I absolutely don’t want",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0079",
-      "message": "@AmazonHelp I can’t log into my account. I’ve tried changing my password but it still says incorrect password every time. I need to access it because I bought an amazon egift card and I still haven’t received it.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1739,68 +569,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0083",
-      "message": "Had an email asking me to review an item I'm still waiting to receive.Then @115830 won't accept the review? So where's my items?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0084",
-      "message": "@116090 Once again, replacement products for previously damaged items; 50% of the items damaged originally, so far 50% damaged again.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0087",
-      "message": "@115830 Bought Konstsmide lights. Two 10 LED spirals, &amp; a 15 LED window lamp, all in brushed metal. All faulty, all bent, some broken LED’s &amp; 2 with dodgy connections. Not convinced they’re new, could have been used &amp; returned? Very Disappointed #Konstsmide #ChristmasLights #UK https://t.co/nb0s4klMIW",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0088",
-      "message": "What a horrible experience shopping with @115850. I’ve not received the product https://t.co/Qy61G4ztGI",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0089",
-      "message": "@115850 @115850 the cable is not working &amp; should be replaced as I already got an alternative from local market...",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0090",
-      "message": "@AmazonHelp Hola . Hice un pedido el día 1 de noviembre y aún estoy esperando fecha aproximada de entrega. Me gustaría saber si por este canal podéis darme alguna información más acerca de la fecha llegada del producto. Gracias",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0091",
-      "message": "@AmazonHelp @115850 I wasn't born on this earth to sit around waiting for you to ring the doorbell and pick up your defective items",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0092",
-      "message": "@AmazonHelp @115850 U send a product which never switch on, and won't accept a return for it. What do want me to do with it? 1/2",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0094",
       "message": "@115850 \nMay I know the reason for which a product of 10 rs is being sold at 99 ?\n@131283 @120319 @144775 @120320 @734 https://t.co/zTBGjT88T9",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0095",
-      "message": "@115850 @115821  even this time they don't have any information about my product please don't buy anything from amazon they are cheater and fake company running ...",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0096",
-      "message": "@115850  Order ID  402-8641191-0869930. Received this damaged product and while trying to return only 'Replacement' option showing.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1811,20 +581,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0106",
-      "message": "@AmazonHelp I'm literally watching you reply to more recent tweets than mine. Shameful. https://t.co/FkEMRxNHpP",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0113",
       "message": "I don't understand why @115821 keeps a 3rd parry seller who is clearly a scammer. 10%positive reviews this year! Still have not gotten stuff",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0114",
-      "message": "purchased 4 HP cartridges from a seller on @115830 some of them unto 6 years out of date. Heres hoping that Amazon sort this out. #disgraceful #seller",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1853,134 +611,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0121",
-      "message": "@273615 @216231 @115821 This had to be a private seller it’s not shipped from the amazon warehouse it’s from a in Home seller.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0122",
-      "message": "@AmazonHelp Bought 2 phones in Dec. Found out they are counterfeit &amp; don't work. Seller closed acct. &amp; took my $500. Amazon CS is NO help :(",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0123",
-      "message": "amazon refuse to provide invoice, seller refuse to provide bill...\nonly tarik pe tarik di ja rahi h..\n@AmazonHelp",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0125",
-      "message": "Coming up on a month now of odd spam emails, turned vehement harassment, threats from @116090 seller. All due to honest review. Unreal.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0127",
-      "message": "@115821 by the side of the sellers!\nThanks froma let down BUYER. Tried 4 TIMES to demonstrate how incorrect was a seller and YOUJUSTDONTCARE",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0128",
-      "message": "@123288 see how @115850  cheats in sale day same seller same process @115851 https://t.co/EFB8eztNEv",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0129",
-      "message": "@115850 Guys, be aware of Amazon's cheating practices that they are doing in the name of their cashback schemes. No cash back received yet",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0130",
-      "message": "@450852 @115850 @115821 100%. Compelled to use them at times because of their deals. But wouldn't if given a choice",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0132",
-      "message": "@115850 20 mails 7-8 tweets,  10-12 calls. Now not able to connect to ur call cntr.. What else do I need to get my refund?? Been 1 mnth nd 13 days since I canceled my order. @115851 @126033 @2156 #Amazon #BlackFridayDeals https://t.co/cjhHxw0uqW",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0135",
-      "message": "@115821 just ruined my kid's 5th bday, said it's worth only a $10 credit &amp; offer ebooks she can't read for their errors.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0136",
-      "message": "@115821 dear amazon the mobile price of redmi 4 is 10999 and u gave 14% discount then it should be -1539.86 \nThen 10999-1540 =9460 https://t.co/vMyN9jGpPE",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0137",
       "message": "@AmazonHelp why any negative feedback can't be published on your website? Is it a method to say you offer the best service at the world?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0140",
-      "message": "Amazon cheated me.haven'tgiven eligible cashback.Following up for 3 wks now.they r jst ignoring it.dnt go 4 it@amazonIN @115821 @AmazonHelp",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0141",
-      "message": "Why have @AmazonHelp now taken their student discount off? Great, wanted to spend £80 on 3 books👍🏻👍🏻👍🏻",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0144",
-      "message": "Hola, @AmazonHelp he querido aprovechar la promo del Cumpleaños Pantry pero no se me han descontado los 10€, (mi compra era superior a 30€).",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0145",
-      "message": "@AmazonHelp you charged my car twice for my prime membership?? What's up, fam?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0146",
-      "message": "@115850 One fladuent activity happen in my card from amazon at name of prime membership with transaction of 6850 rs",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0150",
-      "message": "Hey @115850 , I haven’t recd my ₹ 500 cash back on renewal of #AmazonPrime membership as promised in your promo email.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0151",
-      "message": "I cancelled my #AmazonFresh subscription because some idiot in a sedan had a 15-minute panic attack in front of my house at 5 am over a bag of groceries with a broken handle.\n\nNope nope nope.\n\nhttps://t.co/7sLbo380nP",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0153",
-      "message": "@AmazonHelp I need your help. I don’t have amazon prime is this legit saying about renewing my subscription? And asking me all this details https://t.co/Iy0iSSvP4i",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0154",
-      "message": "Today @115821 canceled my prepaid Prime membership without asking or permission.  They refused to reinstate it- telling me I had to re-enroll. I'll be switching to Walmart and their free 2 day shipping with $0 membership.  @115851 @Walmart",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0155",
-      "message": "@115821 I am appalled at your prime membership. 2 items undelivered and only solution is to extend my membership. 30 mins of my time wasted.",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -1991,20 +623,8 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0159",
-      "message": "Give up with @115830 😑 I pay for Prime for What? Just to get messed around with my deliveries? Think I'll be cancelling my membership! 😠😞",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0160",
       "message": "False promises for prime members #AmazonIN #JeffBezos",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0161",
-      "message": "@115821 Thank you for refusing my payments since 2 days. First you started with our company (Acc Balance &gt; 230K EUR) and now my private one. I am Customer since 1998 and all I got as explanation was a useless mail-template. Thank you for NO support! Long-term customer no value?",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -2015,92 +635,14 @@
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0163",
-      "message": "2 weeks of frustration with @115830, customer support is appalling. Constantly told I would be contacted in 24-48hrs. Never happens.#angry",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0165",
-      "message": "@115821 @AmazonHelp @115851 Ofcourse Amazon doesnt consider it professional enuff fr delivery agent to hve commonsense to call n fix a slot.2/3",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0167",
-      "message": "@115821 for you all to be such a large company you need better call center representatives. I'm so close to cancelling my prime renewal, I should not be on hold for an hour to rectify a problem you all caused",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0168",
-      "message": "@115850 #AmazonIndia Your delivery agent's number provided by you does not exist. How to harassed customers get their products?",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0169",
-      "message": "@115821 @115851 73 minutes on the phone with customer support and all that was accomplished was the rep promising that a return label will be created for an item that has not been delivered. I will never get that time back.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0170",
-      "message": "@115851 #jeffbezos Need your help sir,customer service @2005 is not providing solution, recieved soap instead of a phone worth 33k",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0172",
-      "message": "@115850 I have complaint my amazon balance I s there but I cannot buy",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0173",
-      "message": "I just want to congratulate @115821 for it’s shitty customer service.\nThey make a mistake and make me pay for it.\nTwo months in a row.\n#fail",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0178",
-      "message": "@AmazonHelp One minute its at the hub next its out for delivery next its at the hub again.No clear answers on where my items are",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0181",
-      "message": "@1384\nPlease look into this &amp; solve this asap https://t.co/K0wnvO2DRv",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
       "example_id": "gold_0182",
       "message": "アマゾンからショートメールで\n有料サイト使用による未納料金が発生してる\n的な詐欺ショートメール来た！アマゾン使ってない！！！ｗｗｗ",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
     {
-      "example_id": "gold_0183",
-      "message": "Since when does the MRP being reflected at @115850 become this much. Should this be not considered cheating and Fraud. https://t.co/FS5nnnFXZM",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0184",
-      "message": "@AmazonHelp I'm trying to deal with your terrible courier service (intelcom) that keeps hanging up on me. How do I proceed? I spent a lot on 2 day service... last week.",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0189",
-      "message": "#AmazonBuyUs #AMAZON SUCKS! YOUR CHAT USELESS &amp; YOUR \"CUSTOMER SERVICE\" BITCH HUNG UP ON ME AFTER WAITING OVER 12 HOURS 4 NO PACKAGE 🖕🏽🖕🏽🖕🏽",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0190",
-      "message": "What’s going on guys ? @AmazonHelp https://t.co/uLiSjx1lRA",
+      "example_id": "gold_0186",
+      "message": "Dear @AmazonHelp, Which option should I select for an item that wasn't delivered (but its packaging was) 😂. #ijustwantmysnakebracelet https://t.co/kFLHTNFEUP",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
     },
@@ -2121,140 +663,110 @@
       "message": "Need assistance what to do next @115850 https://t.co/faaafMSPR3",
       "true_routing": "human_escalation",
       "predicted_routing": "auto_handle"
-    },
-    {
-      "example_id": "gold_0196",
-      "message": "hv bn facing 2 many 'technical glitches' w @115850 lately, specially w payments.whereas @118702 hs bn buttr smooth. nvr thot it wd happn",
-      "true_routing": "human_escalation",
-      "predicted_routing": "auto_handle"
     }
   ],
-  "routing_false_positives": [],
-  "low_similarity": [
+  "routing_false_positives": [
     {
-      "example_id": "gold_0182",
-      "message": "アマゾンからショートメールで\n有料サイト使用による未納料金が発生してる\n的な詐欺ショートメール来た！アマゾン使ってない！！！ｗｗｗ",
-      "similarity": 0.0,
-      "true_intent": "account_access",
-      "predicted_intent": "other"
+      "example_id": "gold_0002",
+      "message": "@259896 I really don't like showing frustration on twitter, but come on #Amazon. I need a reason as to why it was delayed 2 (1/2)",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     },
     {
-      "example_id": "gold_0195",
-      "message": "このショートメールは詐欺らしい\n\nアマゾン登録ないからおかしいと思ったが\n\n番号載せてるから仕方ないけど\n気をつけないとな\n\n#詐欺 #アマゾン https://t.co/4zvtoaLr1d",
-      "similarity": 0.0,
-      "true_intent": "account_access",
-      "predicted_intent": "other"
+      "example_id": "gold_0007",
+      "message": "@AmazonHelp why was my prime package delayed and now expected to take 3-4 days???? #wtf this happens way too often",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
+    },
+    {
+      "example_id": "gold_0008",
+      "message": "@115830 I think you got a bug, in my orders it shows that the item will be delivered on Monday, but when I click on Track Package, it states that the item will be delivered on Sunday! So when should I expect it? Sunday, Monday?",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
+    },
+    {
+      "example_id": "gold_0012",
+      "message": "@121284 I have ordered it but why so late delivery (Nov)\n?\nCan I get it in Diwali ?\n#AskAlexa",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
+    },
+    {
+      "example_id": "gold_0198",
+      "message": "Fml I just accidentally signed up for amazon prime 😒",
+      "true_routing": "auto_handle",
+      "predicted_routing": "human_escalation"
     }
   ],
+  "low_similarity": [],
   "intent_confusion": [
     {
-      "true": "customer_service",
-      "predicted": "delivery_issue",
-      "count": 6
-    },
-    {
-      "true": "product_issue",
-      "predicted": "return_refund",
-      "count": 6
-    },
-    {
       "true": "return_refund",
-      "predicted": "order_issue",
-      "count": 5
-    },
-    {
-      "true": "product_issue",
-      "predicted": "order_issue",
-      "count": 4
-    },
-    {
-      "true": "prime_membership",
-      "predicted": "payment_issue",
-      "count": 4
-    },
-    {
-      "true": "delivery_issue",
       "predicted": "product_issue",
       "count": 4
     },
     {
-      "true": "promotion_offer",
-      "predicted": "other",
-      "count": 4
-    },
-    {
       "true": "prime_membership",
-      "predicted": "other",
-      "count": 4
-    },
-    {
-      "true": "product_issue",
-      "predicted": "delivery_issue",
-      "count": 3
-    },
-    {
-      "true": "delivery_issue",
-      "predicted": "order_issue",
-      "count": 3
-    },
-    {
-      "true": "return_refund",
-      "predicted": "other",
-      "count": 3
-    },
-    {
-      "true": "promotion_offer",
       "predicted": "payment_issue",
       "count": 3
     },
     {
-      "true": "product_issue",
-      "predicted": "account_access",
-      "count": 3
-    },
-    {
-      "true": "prime_video",
+      "true": "promotion_offer",
       "predicted": "other",
       "count": 3
     },
     {
       "true": "customer_service",
-      "predicted": "other",
+      "predicted": "delivery_issue",
       "count": 3
+    },
+    {
+      "true": "customer_service",
+      "predicted": "product_issue",
+      "count": 2
     },
     {
       "true": "delivery_issue",
-      "predicted": "prime_membership",
-      "count": 3
+      "predicted": "customer_service",
+      "count": 2
+    },
+    {
+      "true": "return_refund",
+      "predicted": "delivery_issue",
+      "count": 2
     },
     {
       "true": "payment_issue",
+      "predicted": "seller_marketplace",
+      "count": 2
+    },
+    {
+      "true": "product_issue",
+      "predicted": "account_access",
+      "count": 2
+    },
+    {
+      "true": "product_issue",
+      "predicted": "prime_membership",
+      "count": 2
+    },
+    {
+      "true": "prime_membership",
+      "predicted": "prime_video",
+      "count": 2
+    },
+    {
+      "true": "customer_service",
+      "predicted": "payment_issue",
+      "count": 2
+    },
+    {
+      "true": "other",
       "predicted": "delivery_issue",
       "count": 2
     },
     {
       "true": "order_issue",
-      "predicted": "other",
-      "count": 2
-    },
-    {
-      "true": "other",
-      "predicted": "product_issue",
-      "count": 2
-    },
-    {
-      "true": "product_issue",
-      "predicted": "prime_video",
-      "count": 2
-    },
-    {
-      "true": "account_access",
-      "predicted": "other",
-      "count": 2
-    },
-    {
-      "true": "payment_issue",
-      "predicted": "order_issue",
+      "predicted": "delivery_issue",
       "count": 1
     },
     {
@@ -2264,22 +776,27 @@
     },
     {
       "true": "account_access",
-      "predicted": "order_issue",
+      "predicted": "customer_service",
       "count": 1
     },
     {
-      "true": "payment_issue",
+      "true": "return_refund",
+      "predicted": "other",
+      "count": 1
+    },
+    {
+      "true": "product_issue",
       "predicted": "return_refund",
       "count": 1
     },
     {
       "true": "payment_issue",
+      "predicted": "delivery_issue",
+      "count": 1
+    },
+    {
+      "true": "promotion_offer",
       "predicted": "account_access",
-      "count": 1
-    },
-    {
-      "true": "account_access",
-      "predicted": "return_refund",
       "count": 1
     },
     {
@@ -2293,78 +810,88 @@
       "count": 1
     },
     {
-      "true": "return_refund",
-      "predicted": "product_issue",
-      "count": 1
-    },
-    {
-      "true": "promotion_offer",
-      "predicted": "prime_video",
-      "count": 1
-    },
-    {
-      "true": "promotion_offer",
-      "predicted": "delivery_issue",
+      "true": "other",
+      "predicted": "order_issue",
       "count": 1
     },
     {
       "true": "delivery_issue",
-      "predicted": "promotion_offer",
+      "predicted": "seller_marketplace",
       "count": 1
     },
     {
-      "true": "customer_service",
+      "true": "other",
       "predicted": "promotion_offer",
       "count": 1
     },
     {
       "true": "delivery_issue",
-      "predicted": "customer_service",
+      "predicted": "order_issue",
       "count": 1
     },
     {
-      "true": "promotion_offer",
+      "true": "prime_video",
       "predicted": "prime_membership",
       "count": 1
     },
     {
-      "true": "customer_service",
-      "predicted": "product_issue",
-      "count": 1
-    },
-    {
-      "true": "prime_membership",
-      "predicted": "prime_video",
-      "count": 1
-    },
-    {
-      "true": "product_issue",
-      "predicted": "customer_service",
-      "count": 1
-    },
-    {
-      "true": "payment_issue",
+      "true": "seller_marketplace",
       "predicted": "customer_service",
       "count": 1
     },
     {
       "true": "seller_marketplace",
-      "predicted": "delivery_issue",
+      "predicted": "order_issue",
+      "count": 1
+    },
+    {
+      "true": "seller_marketplace",
+      "predicted": "other",
+      "count": 1
+    },
+    {
+      "true": "promotion_offer",
+      "predicted": "seller_marketplace",
+      "count": 1
+    },
+    {
+      "true": "prime_membership",
+      "predicted": "account_access",
+      "count": 1
+    },
+    {
+      "true": "customer_service",
+      "predicted": "prime_membership",
+      "count": 1
+    },
+    {
+      "true": "customer_service",
+      "predicted": "return_refund",
       "count": 1
     },
     {
       "true": "delivery_issue",
+      "predicted": "prime_membership",
+      "count": 1
+    },
+    {
+      "true": "other",
+      "predicted": "product_issue",
+      "count": 1
+    },
+    {
+      "true": "account_access",
       "predicted": "other",
       "count": 1
     },
     {
-      "true": "payment_issue",
-      "predicted": "other",
-      "count": 1
-    },
-    {
-      "true": "return_refund",
+      "true": "product_issue",
       "predicted": "delivery_issue",
+      "count": 1
+    },
+    {
+      "true": "order_issue",
+      "predicted": "other",
       "count": 1
     }
   ]

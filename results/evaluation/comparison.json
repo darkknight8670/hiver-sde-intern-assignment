@@ -17,13 +17,22 @@
     "routing_macro_f1": 0.32001255361439485,
     "routing_weighted_f1": 0.2571817135683649
   },
-  "gemini_agent": {
-    "n": 14,
-    "intent_accuracy": 1.0,
-    "intent_macro_f1": 1.0,
-    "intent_weighted_f1": 1.0,
-    "routing_accuracy": 0.7142857142857143,
-    "routing_macro_f1": 0.6888888888888889,
-    "routing_weighted_f1": 0.688888888888889
+  "groq_agent": {
+    "n": 200,
+    "intent_accuracy": 0.715,
+    "intent_macro_f1": 0.6865887251032481,
+    "intent_weighted_f1": 0.714280033323046,
+    "routing_accuracy": 0.855,
+    "routing_macro_f1": 0.8354096313743296,
+    "routing_weighted_f1": 0.8603944493317063
+  },
+  "coverage": {
+    "golden_n": 200,
+    "trivial_n": 200,
+    "simple_n": 200,
+    "final_agent_n": 200,
+    "genuine_judge_n": 200,
+    "genuine_human_review_n": 0,
+    "human_judge_agreement_n": 0
   }
 }

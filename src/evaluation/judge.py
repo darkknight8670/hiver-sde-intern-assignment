@@ -1,15 +1,16 @@
 import json
-import os
 from pathlib import Path
 
-from dotenv import load_dotenv
-from google import genai
+import sys
 
-load_dotenv()
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+AGENT_DIR = PROJECT_ROOT / "src" / "agent"
+sys.path.insert(0, str(AGENT_DIR))
 
-GOLDEN_FILE = Path("data/golden/golden_set.jsonl")
-AGENT_FILE = Path("results/evaluation/agent_predictions.jsonl")
-OUTPUT_FILE = Path("results/evaluation/llm_judge.jsonl")
+from provider import LLMProvider
+GOLDEN_FILE = PROJECT_ROOT / "data/golden/golden_set.jsonl"
+AGENT_FILE = PROJECT_ROOT / "results/evaluation/agent_predictions.jsonl"
+OUTPUT_FILE = PROJECT_ROOT / "results/evaluation/llm_judge.jsonl"
 
 
 JUDGE_SYSTEM_PROMPT = """
@@ -108,8 +109,34 @@ def load_existing():
     return {
         record["example_id"]: record
         for record in records
-        if record.get("status") == "success"
+        if (
+            record.get("status") == "success"
+            and not record.get("mock")
+            and not record.get("mock_disclaimer")
+            and record.get("example_id")
+        )
     }
+
+
+def remove_synthetic_records():
+    if not OUTPUT_FILE.exists():
+        return
+
+    records = load_jsonl(OUTPUT_FILE)
+    genuine = [
+        record
+        for record in records
+        if (
+            record.get("status") == "success"
+            and not record.get("mock")
+            and not record.get("mock_disclaimer")
+        )
+    ]
+
+    if len(genuine) != len(records):
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            for record in genuine:
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 def build_prompt(gold, prediction):
@@ -198,11 +225,8 @@ def append_record(record):
 
 
 def main():
-    api_key = os.getenv("GEMINI_API_KEY")
-    model = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
-
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY is not set in .env")
+    remove_synthetic_records()
+    provider = LLMProvider()
 
     gold_records = load_jsonl(GOLDEN_FILE)
 
@@ -241,8 +265,6 @@ def main():
         for record in gold_records
     }
 
-    client = genai.Client(api_key=api_key)
-
     success_count = 0
     failure_count = 0
 
@@ -261,12 +283,10 @@ def main():
         prompt = build_prompt(gold, prediction)
 
         try:
-            interaction = client.interactions.create(
-                model=model,
-                input=f"{JUDGE_SYSTEM_PROMPT}\n\n{prompt}",
-            )
-
-            raw_output = (interaction.output_text or "").strip()
+            raw_output = provider.generate(
+                JUDGE_SYSTEM_PROMPT,
+                prompt,
+            ).strip()
 
             if not raw_output:
                 raise RuntimeError("Empty judge response")
@@ -275,7 +295,8 @@ def main():
 
             record = {
                 "example_id": example_id,
-                "model": model,
+                "provider": provider.provider,
+                "model": provider.model,
                 "groundedness": result["groundedness"],
                 "helpfulness": result["helpfulness"],
                 "correctness": result["correctness"],
@@ -307,7 +328,7 @@ def main():
             # Stop immediately on quota/rate-limit errors.
             if "429" in error_message or "quota" in error_message.lower():
                 print()
-                print("Gemini quota/rate limit detected.")
+                print("Provider quota/rate limit detected.")
                 print("Stopping this run so the script can resume later.")
                 break
 
