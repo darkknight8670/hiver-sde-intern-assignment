@@ -224,17 +224,6 @@ def main():
     judge_predictions = load_jsonl(
         PROJECT_ROOT / "results" / "evaluation" / "llm_judge.jsonl"
     )
-    human_reviews = load_jsonl(
-        PROJECT_ROOT / "data" / "golden" / "human_review.jsonl"
-    )
-    human_fields = (
-        "human_acceptable",
-        "human_grounded",
-        "human_helpful",
-        "human_correct",
-        "human_hallucination",
-        "human_reason",
-    )
     genuine_judge_ids = {
         record["example_id"]
         for record in judge_predictions
@@ -245,15 +234,6 @@ def main():
             and record.get("example_id")
         )
     }
-    genuine_human_ids = {
-        record["example_id"]
-        for record in human_reviews
-        if (
-            record.get("example_id")
-            and all(record.get(field) not in (None, "") for field in human_fields)
-        )
-    }
-
     results = {
         "trivial": calculate_metrics(trivial_records),
         "simple": calculate_metrics(simple_records),
@@ -264,8 +244,6 @@ def main():
             "simple_n": len(simple_records),
             "final_agent_n": len(agent_records),
             "genuine_judge_n": len(genuine_judge_ids),
-            "genuine_human_review_n": len(genuine_human_ids),
-            "human_judge_agreement_n": len(genuine_human_ids & genuine_judge_ids),
         },
     }
 

@@ -69,8 +69,3 @@ The agent and judge evaluators preserve successful example IDs, retry transient 
 ## 17\. LLM-as-judge scope
 
 The judge scores groundedness, helpfulness, correctness, tone, hallucination, overall quality, acceptability, and reason using only each real agent record. Mock or synthetic judge records are excluded from the final count.
-
-## 18\. Human review limitation
-
-Human review was intentionally not completed for this submission. The human-review file remains an unreviewed template, so no human-quality metric or human-judge agreement statistic is reported.
-

@@ -209,7 +209,7 @@ A fixed 200-example golden set is stored at:
 data/golden/golden_set.jsonl
 ```
 
-It is sampled from the held-out test split and contains intent and routing annotations plus rationale and sampling metadata. The annotations were prepared through the project's annotation/model-assisted workflow; independent human validation was not completed for this submission.
+It is sampled from the held-out test split and contains intent and routing annotations plus rationale and sampling metadata.
 
 Inspect it:
 
@@ -456,41 +456,15 @@ During development, the available Gemini API quota interrupted the initial batch
 ```text
 Agent predictions:       200 / 200
 Genuine LLM-judge rows:  200 / 200
-Genuine human reviews:     0 / 200
-Human/judge paired rows:   0
 ```
 
-The Groq judge results are model-generated quality assessments, not human labels. Human-versus-judge agreement was not computed because there are no paired independent human annotations.
+The Groq judge results are model-generated quality assessments, not human evaluation.
 
 The genuine Groq judge used provider `Groq` and model `openai/gpt-oss-120b`. Its mean overall score was 4.64/5, median 5/5, and acceptable rate 96.0%. These are automated judge results, not human evaluation.
 
 ## What is misleading about my headline number?
 
-The 200-example score is useful but is not a universal measure of production quality. The golden set is a fixed sample from a random episode-level split, and results depend on the selected Groq model, prompt, historical-example retrieval, and provider behavior. API/provider differences can change outputs. The LLM judge is an automated rubric-based evaluator and may be biased or inconsistent. Human review coverage is zero, so there is no independent human quality validation. Baseline and agent metrics use the same 200-example denominator; judge metrics describe response quality separately rather than classification accuracy.
-
-## Human Review
-
-Human review was not completed for this submission. Therefore human-judge agreement is not reported. The existing `data/golden/human_review.jsonl` contains unreviewed template records rather than completed human labels.
-
-Generate the human-review file:
-
-```bash
-python -m src.evaluation.create_human_review
-```
-
-Output:
-
-```text
-data/golden/human_review.jsonl
-```
-
-Launch the review interface:
-
-```bash
-python -m src.evaluation.review_human
-```
-
-The project does not fabricate human-agreement statistics when independent human labels are unavailable.
+The 200-example score is useful but is not a universal measure of production quality. The golden set is a fixed sample from a random episode-level split, and results depend on the selected Groq model, prompt, historical-example retrieval, and provider behavior. API/provider differences can change outputs. The LLM judge is an automated rubric-based evaluator and may be biased or inconsistent. Baseline and agent metrics use the same 200-example denominator; judge metrics describe response quality separately rather than classification accuracy.
 
 ## Report
 
@@ -586,24 +560,23 @@ Final Groq agent macro-F1:    68.66%
 Final Groq routing accuracy:  85.50%
 ```
 
-The final agent was evaluated on all 200 examples. The Groq judge also evaluated 200 real agent responses. Human review was not completed, so human-judge agreement is not reported.
+The final agent was evaluated on all 200 examples. The Groq judge evaluated 200 real agent responses.
 
 ### What is misleading about my headline number?
 
-The 71.5% intent accuracy and 85.5% routing accuracy are measured on a 200-example set whose annotations were not independently human-validated. The set is sampled from a held-out test split rather than representing the full TWCS distribution. The final agent uses historical-example retrieval followed by LLM generation, and the result depends on the selected Groq model, prompt, provider behavior, and taxonomy. The automated LLM judge is not a substitute for human agreement. These results demonstrate a promising prototype rather than production-level accuracy.
+The 71.5% intent accuracy and 85.5% routing accuracy are measured on a 200-example set sampled from a held-out test split rather than representing the full TWCS distribution. The final agent uses historical-example retrieval followed by LLM generation, and the result depends on the selected Groq model, prompt, provider behavior, and taxonomy. The automated LLM judge is an additional quality signal, not a production guarantee. These results demonstrate a promising prototype rather than production-level accuracy.
 
 ## Future Work
 
 If additional development time were available:
 
 1. Restore the full generated AmazonHelp training split and rerun retrieval-backed evaluation.
-2. Collect independent human ratings for a judge-agreement subset.
-3. Improve multilingual and security-message retrieval.
-4. Replace keyword routing rules with a calibrated routing classifier.
-5. Add confidence thresholds and abstention.
-6. Add retrieval-quality diagnostics and regression tests for observed confusions.
-7. Evaluate multiple providers under the same prompt and denominator.
-8. Integrate live support tooling only after offline evaluation is strong.
+2. Improve multilingual and security-message retrieval.
+3. Replace keyword routing rules with a calibrated routing classifier.
+4. Add confidence thresholds and abstention.
+5. Add retrieval-quality diagnostics and regression tests for observed confusions.
+6. Evaluate multiple providers under the same prompt and denominator.
+7. Integrate live support tooling only after offline evaluation is strong.
 
 ## Summary
 

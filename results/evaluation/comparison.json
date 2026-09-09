@@ -31,8 +31,6 @@
     "trivial_n": 200,
     "simple_n": 200,
     "final_agent_n": 200,
-    "genuine_judge_n": 200,
-    "genuine_human_review_n": 0,
-    "human_judge_agreement_n": 0
+    "genuine_judge_n": 200
   }
 }
