@@ -1,0 +1,13 @@
+{
+  "n": 14,
+  "intent": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0
+  },
+  "routing": {
+    "accuracy": 0.7142857142857143,
+    "macro_f1": 0.6888888888888889,
+    "weighted_f1": 0.688888888888889
+  }
+}

@@ -1,0 +1,11 @@
+brand,tweet_count,customer_authors,brand_authors,support_interactions,brand_responses,response_rate,multi_response_messages,multi_turn_customer_messages,multi_turn_rate,usable_customer_messages,unique_customer_messages,empty_brand_message_rate,short_brand_message_rate,support_engagement_proxy,candidate_quality_score,candidate_score
+AmazonHelp,169840,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0002,0.0,0.4,4.8165
+AppleSupport,106860,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.6317
+Uber_Support,56270,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.3751
+SpotifyCares,43265,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.27
+Delta,42253,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.2606
+Tesco,38573,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0001,0.0,0.4,4.2239
+AmericanAir,36764,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.2049
+TMobileHelp,34317,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.1774
+comcastcares,33031,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0,0.0,0.4,4.1621
+British_Airways,29361,702669,1,0,0,0.0,0,0,0.0,1531727,1508319,0.0,0.0002,0.0,0.4,4.1146

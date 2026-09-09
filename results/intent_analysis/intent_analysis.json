@@ -1,0 +1,1506 @@
+{
+  "num_customer_support_pairs": 97642,
+  "top_customer_terms": [
+    [
+      "order",
+      10971
+    ],
+    [
+      "delivery",
+      10858
+    ],
+    [
+      "prime",
+      8979
+    ],
+    [
+      "now",
+      6629
+    ],
+    [
+      "delivered",
+      6024
+    ],
+    [
+      "service",
+      5969
+    ],
+    [
+      "que",
+      5703
+    ],
+    [
+      "day",
+      5552
+    ],
+    [
+      "customer",
+      5291
+    ],
+    [
+      "today",
+      5081
+    ],
+    [
+      "still",
+      4884
+    ],
+    [
+      "time",
+      4874
+    ],
+    [
+      "one",
+      4751
+    ],
+    [
+      "all",
+      4310
+    ],
+    [
+      "ordered",
+      4282
+    ],
+    [
+      "days",
+      4246
+    ],
+    [
+      "package",
+      4219
+    ],
+    [
+      "email",
+      3634
+    ],
+    [
+      "don",
+      3562
+    ],
+    [
+      "product",
+      3509
+    ],
+    [
+      "account",
+      3284
+    ],
+    [
+      "amp",
+      3185
+    ],
+    [
+      "any",
+      3165
+    ],
+    [
+      "received",
+      2983
+    ],
+    [
+      "refund",
+      2967
+    ],
+    [
+      "says",
+      2965
+    ],
+    [
+      "even",
+      2858
+    ],
+    [
+      "back",
+      2792
+    ],
+    [
+      "item",
+      2768
+    ],
+    [
+      "need",
+      2692
+    ],
+    [
+      "after",
+      2597
+    ],
+    [
+      "est",
+      2584
+    ],
+    [
+      "shipping",
+      2540
+    ],
+    [
+      "yet",
+      2460
+    ],
+    [
+      "deliver",
+      2413
+    ],
+    [
+      "like",
+      2383
+    ],
+    [
+      "call",
+      2375
+    ],
+    [
+      "want",
+      2335
+    ],
+    [
+      "again",
+      2291
+    ],
+    [
+      "already",
+      2258
+    ],
+    [
+      "same",
+      2243
+    ],
+    [
+      "app",
+      2227
+    ],
+    [
+      "then",
+      2203
+    ],
+    [
+      "last",
+      2189
+    ],
+    [
+      "only",
+      2189
+    ],
+    [
+      "never",
+      2158
+    ],
+    [
+      "didn",
+      2129
+    ],
+    [
+      "know",
+      2122
+    ],
+    [
+      "which",
+      2100
+    ],
+    [
+      "guys",
+      2091
+    ],
+    [
+      "did",
+      2045
+    ],
+    [
+      "issue",
+      2033
+    ],
+    [
+      "return",
+      2018
+    ],
+    [
+      "phone",
+      2010
+    ],
+    [
+      "hey",
+      1934
+    ],
+    [
+      "pas",
+      1931
+    ],
+    [
+      "yes",
+      1921
+    ],
+    [
+      "said",
+      1897
+    ],
+    [
+      "date",
+      1870
+    ],
+    [
+      "more",
+      1861
+    ],
+    [
+      "pay",
+      1855
+    ],
+    [
+      "money",
+      1829
+    ],
+    [
+      "really",
+      1804
+    ],
+    [
+      "two",
+      1797
+    ],
+    [
+      "its",
+      1721
+    ],
+    [
+      "waiting",
+      1714
+    ],
+    [
+      "going",
+      1709
+    ],
+    [
+      "sent",
+      1708
+    ],
+    [
+      "yesterday",
+      1680
+    ],
+    [
+      "contact",
+      1671
+    ],
+    [
+      "next",
+      1662
+    ],
+    [
+      "since",
+      1647
+    ],
+    [
+      "very",
+      1615
+    ],
+    [
+      "card",
+      1609
+    ],
+    [
+      "told",
+      1595
+    ],
+    [
+      "items",
+      1593
+    ],
+    [
+      "por",
+      1568
+    ],
+    [
+      "see",
+      1550
+    ],
+    [
+      "new",
+      1532
+    ],
+    [
+      "orders",
+      1531
+    ],
+    [
+      "address",
+      1518
+    ],
+    [
+      "parcel",
+      1506
+    ],
+    [
+      "times",
+      1500
+    ],
+    [
+      "number",
+      1489
+    ],
+    [
+      "nothing",
+      1477
+    ],
+    [
+      "saying",
+      1475
+    ],
+    [
+      "mail",
+      1445
+    ],
+    [
+      "done",
+      1441
+    ],
+    [
+      "arrive",
+      1441
+    ],
+    [
+      "week",
+      1437
+    ],
+    [
+      "over",
+      1399
+    ],
+    [
+      "because",
+      1398
+    ],
+    [
+      "care",
+      1395
+    ],
+    [
+      "ich",
+      1385
+    ],
+    [
+      "way",
+      1384
+    ],
+    [
+      "some",
+      1372
+    ],
+    [
+      "also",
+      1367
+    ],
+    [
+      "who",
+      1360
+    ],
+    [
+      "doesn",
+      1355
+    ],
+    [
+      "does",
+      1345
+    ]
+  ],
+  "top_support_terms": [
+    [
+      "sorry",
+      24481
+    ],
+    [
+      "order",
+      13425
+    ],
+    [
+      "our",
+      12501
+    ],
+    [
+      "like",
+      9970
+    ],
+    [
+      "details",
+      9924
+    ],
+    [
+      "look",
+      8816
+    ],
+    [
+      "delivery",
+      8424
+    ],
+    [
+      "team",
+      7713
+    ],
+    [
+      "know",
+      7422
+    ],
+    [
+      "reach",
+      7240
+    ],
+    [
+      "let",
+      6605
+    ],
+    [
+      "hear",
+      6067
+    ],
+    [
+      "contact",
+      5923
+    ],
+    [
+      "any",
+      5807
+    ],
+    [
+      "link",
+      5724
+    ],
+    [
+      "information",
+      5606
+    ],
+    [
+      "account",
+      5512
+    ],
+    [
+      "check",
+      5373
+    ],
+    [
+      "date",
+      4959
+    ],
+    [
+      "via",
+      4943
+    ],
+    [
+      "vous",
+      4741
+    ],
+    [
+      "more",
+      4712
+    ],
+    [
+      "kindly",
+      4711
+    ],
+    [
+      "que",
+      4312
+    ],
+    [
+      "received",
+      3945
+    ],
+    [
+      "support",
+      3906
+    ],
+    [
+      "provide",
+      3829
+    ],
+    [
+      "further",
+      3791
+    ],
+    [
+      "experience",
+      3760
+    ],
+    [
+      "email",
+      3612
+    ],
+    [
+      "feedback",
+      3594
+    ],
+    [
+      "issue",
+      3578
+    ],
+    [
+      "phone",
+      3494
+    ],
+    [
+      "options",
+      3480
+    ],
+    [
+      "provided",
+      3411
+    ],
+    [
+      "keep",
+      3365
+    ],
+    [
+      "time",
+      3363
+    ],
+    [
+      "don",
+      3332
+    ],
+    [
+      "trouble",
+      3319
+    ],
+    [
+      "chat",
+      3300
+    ],
+    [
+      "assist",
+      3162
+    ],
+    [
+      "info",
+      3112
+    ],
+    [
+      "delay",
+      3046
+    ],
+    [
+      "apologies",
+      2991
+    ],
+    [
+      "able",
+      2970
+    ],
+    [
+      "take",
+      2940
+    ],
+    [
+      "concern",
+      2902
+    ],
+    [
+      "carrier",
+      2823
+    ],
+    [
+      "twitter",
+      2818
+    ],
+    [
+      "personal",
+      2794
+    ],
+    [
+      "did",
+      2748
+    ],
+    [
+      "share",
+      2729
+    ],
+    [
+      "available",
+      2654
+    ],
+    [
+      "mail",
+      2651
+    ],
+    [
+      "understand",
+      2597
+    ],
+    [
+      "tell",
+      2563
+    ],
+    [
+      "back",
+      2551
+    ],
+    [
+      "see",
+      2543
+    ],
+    [
+      "hola",
+      2486
+    ],
+    [
+      "may",
+      2486
+    ],
+    [
+      "por",
+      2459
+    ],
+    [
+      "soon",
+      2415
+    ],
+    [
+      "item",
+      2297
+    ],
+    [
+      "posted",
+      2271
+    ],
+    [
+      "tracking",
+      2254
+    ],
+    [
+      "page",
+      2185
+    ],
+    [
+      "update",
+      2090
+    ],
+    [
+      "access",
+      2060
+    ],
+    [
+      "touch",
+      2044
+    ],
+    [
+      "con",
+      2031
+    ],
+    [
+      "without",
+      2027
+    ],
+    [
+      "para",
+      1995
+    ],
+    [
+      "want",
+      1939
+    ],
+    [
+      "prime",
+      1883
+    ],
+    [
+      "happy",
+      1839
+    ],
+    [
+      "sure",
+      1786
+    ],
+    [
+      "using",
+      1780
+    ],
+    [
+      "orders",
+      1732
+    ],
+    [
+      "report",
+      1720
+    ],
+    [
+      "votre",
+      1711
+    ],
+    [
+      "service",
+      1702
+    ],
+    [
+      "receive",
+      1663
+    ],
+    [
+      "request",
+      1646
+    ],
+    [
+      "confirmation",
+      1644
+    ],
+    [
+      "package",
+      1615
+    ],
+    [
+      "fill",
+      1614
+    ],
+    [
+      "directly",
+      1580
+    ],
+    [
+      "est",
+      1567
+    ],
+    [
+      "delivered",
+      1566
+    ],
+    [
+      "glad",
+      1552
+    ],
+    [
+      "find",
+      1548
+    ],
+    [
+      "notre",
+      1546
+    ],
+    [
+      "wait",
+      1546
+    ],
+    [
+      "confirm",
+      1538
+    ],
+    [
+      "return",
+      1516
+    ],
+    [
+      "seller",
+      1507
+    ],
+    [
+      "bonjour",
+      1485
+    ],
+    [
+      "assistance",
+      1483
+    ],
+    [
+      "day",
+      1451
+    ],
+    [
+      "pour",
+      1432
+    ]
+  ],
+  "keyword_groups": {
+    "delivery": {
+      "count": 24326,
+      "percentage": 24.91,
+      "examples": [
+        {
+          "customer": "@115830 delivery service is shockingly poor,  a 12 hour delivery window and items still not arrived after 2 Days. #badservice #amazon #prime",
+          "support": "@183708 Apologies for the delay, what is the current status on the tracking?^CN"
+        },
+        {
+          "customer": "@AmazonHelp Out for delivery for past 2 days?!  Maybe tye elves are still making them 😞",
+          "support": "@183708 Let's look into this in real time. Please call or chat with us here: https://t.co/c3UEb9kW5W ^BA"
+        },
+        {
+          "customer": "@115830 get cut off after 25 mins on the phone. Guaranteed a delivery today. Not even with the courier...your customer service is a joke!",
+          "support": "@489141 I'm so sorry that your item didn't arrive in time! Can you tell me the status &amp; carrier:  https://t.co/aaDyEz1VgE ^FR"
+        },
+        {
+          "customer": "@AmazonHelp straight up lied to by the logistics people, about whether they would be attempting redelivery, or what would be bundled together, etc.",
+          "support": "@452862 Oh my, we'd like to have a specialist to look at this! Pls leave your info here &amp; we'll be in touch: https://t.co/770lpyctU6 ^KN"
+        },
+        {
+          "customer": "Absolutely fuming with @115830 ordered a surprise Christmas present and it arrived just as it was, without the brown cardboard wrapping. So the person who was supposed to be getting it as a surprise saw it when it was delivered!!!! Furious!!! You've ruined Christmas! 😡😡😡 https://t.co/towxVjCTri",
+          "support": "@726339 Oh no! I'm so sorry this happened! When you have a moment, please contact us here to leave feedback about your experience: https://t.co/sNNrcRsJWv and you can review some information here about packaging:  https://t.co/3CAOk5IGHu ^SM"
+        },
+        {
+          "customer": "@115821 Fix the survey we receive after picking up our first locker delivery. It will give you inaccurate results of customer experience. https://t.co/mMXFpGhSQ5",
+          "support": "@214952 Thank you for bringing this to our attention! I've escalated this to the proper team. ^KB"
+        },
+        {
+          "customer": "These @115821 messages have been quite frequent this year. Package just sat at the facility since 8am. https://t.co/RW7MyeFhN2 #AMZL_US",
+          "support": "@205824 Sorry for the delay Ryan- Please reach out to us if it doesn't arrive by Wednesday. Thank you. ^NV"
+        },
+        {
+          "customer": "It should come as no surprise but #AmazonLogistics screwed up again today, thanks @115821 -- 0/3 days without a delivery",
+          "support": "@425206 We'd like to take a closer look into this. Please send us your details here: https://t.co/djqiRBnW4E ^LI"
+        },
+        {
+          "customer": "Daughter is 1500 miles away at school and sick with a bug. God bless Amazon prime now for delivering soup and crackers when this dad can’t be there.",
+          "support": "@819088 Glad we were able to assist! ^TR"
+        },
+        {
+          "customer": "@AmazonHelp @122232 Sorry should’ve read can I claim back delivery charge.",
+          "support": "@281285 Let's take a closer look into what options we have here: https://t.co/JzP7hlA23B ^JZ"
+        }
+      ]
+    },
+    "order": {
+      "count": 16326,
+      "percentage": 16.72,
+      "examples": [
+        {
+          "customer": "@AmazonHelp 2/2 … tells me to go to Amazon and cancel from there. It's and endless loop of frustration. https://t.co/HAMeKMkUbN",
+          "support": "@419460 I'm so sorry for the frustrating experience, Cheryl. What happens when you try to edit your payment information? ^FD"
+        },
+        {
+          "customer": "#JCPenny #Dickies #Amazon  Ordered clothes from all 3 same day about  4 weeks ago #Pennies 2 Days #Dickies 4 #Amazon still hasn't come yet",
+          "support": "@177834 I'm so sorry about the delay! Have we missed the delivery date given here: https://t.co/Y5jpI9gRhE? ^AG"
+        },
+        {
+          "customer": "Absolutely fuming with @115830 ordered a surprise Christmas present and it arrived just as it was, without the brown cardboard wrapping. So the person who was supposed to be getting it as a surprise saw it when it was delivered!!!! Furious!!! You've ruined Christmas! 😡😡😡 https://t.co/towxVjCTri",
+          "support": "@726339 Oh no! I'm so sorry this happened! When you have a moment, please contact us here to leave feedback about your experience: https://t.co/sNNrcRsJWv and you can review some information here about packaging:  https://t.co/3CAOk5IGHu ^SM"
+        },
+        {
+          "customer": "@115850 u sold me defective phone. Need to rush to service centre just in 2 weeks.\n@AmazonHelp @115850 cheats with their customers.\nOrder Number : 406-9173437-3255502. \n\nSeeking help.",
+          "support": "@787949 Apologies that you've received a defective product. Please fill in your details here: https://t.co/GIJyeYqKE0 and we'll assist you accordingly. \nPlease don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^PJ"
+        },
+        {
+          "customer": "@AmazonHelp @122232 are a disgrace! 3 orders to a BFPO address.....all 3 returned! Why do you use these jokers. #Sackthem",
+          "support": "@208317 I'm sorry about the trouble. We'd like to look into the delivery issues here: https://t.co/JzP7hlA23B ^LI"
+        },
+        {
+          "customer": "@AmazonHelp Frgt abt email today is day4 where the hell is my stupid order oh god m tired n frustrated with you all @115821",
+          "support": "@297517 Could you please check and confirm if you've received any correspondence from our side here: https://t.co/NTkrxpsbHJ ? ^AB"
+        },
+        {
+          "customer": "@AmazonHelp I’ve already raised my issue to customer care last night. I need to place an order but you keep cancelling it.",
+          "support": "@313526 Were you advised what the issue was when you contacted Customer Service? ^KM"
+        },
+        {
+          "customer": "Hey, @115828 should my pre-order of Pokémon Ultra Sun have shipped already if it's to arrive tomorrow?",
+          "support": "@727877 I'm sorry, we don't have access to account information via Twitter. Once your order ships, you will be notified via e-mail. ^VS"
+        },
+        {
+          "customer": "@AmazonHelp It was a game pre-order using Amazon prime, free Two-Day Shipping. These types of products usually ship 2 days before when I pre-order them.",
+          "support": "@727877 I see. We aim to deliver by the delivery date we provided via checkout/e-mail, unless we've notified you to explain otherwise. Please let us know if it doesn't arrive by 8 PM tomorrow. ^WJ"
+        },
+        {
+          "customer": "@AmazonHelp Will do. I can DM the order number if that would help at all.\n\nThanks for the info.",
+          "support": "@727877 You're so welcome! We're happy to help. You don't have to provide that information since we can't access accounts via Twitter. But please keep us posted about this! ^GP"
+        }
+      ]
+    },
+    "refund_return": {
+      "count": 6542,
+      "percentage": 6.7,
+      "examples": [
+        {
+          "customer": "@AmazonHelp @122232 are a disgrace! 3 orders to a BFPO address.....all 3 returned! Why do you use these jokers. #Sackthem",
+          "support": "@208317 I'm sorry about the trouble. We'd like to look into the delivery issues here: https://t.co/JzP7hlA23B ^LI"
+        },
+        {
+          "customer": "@AmazonHelp Details Forward... Hope To See Your Reply Soon... Wish To Get Some Good Offers So I Can Make Purchases of My iPad... I Am Short of Money.... So Please Bring Some Good Offers... And Be My Santa.... 😊😊",
+          "support": "@171324 Appreciate your support. You will find all the genuine &amp; best deals on our website. ^RW"
+        },
+        {
+          "customer": "@AmazonHelp I placed a return request for another item today but I wasn't allowed to change the bank account for refund",
+          "support": "@181741 You can use the shared below to reach out to our support team. They will help you sort this. ^CB"
+        },
+        {
+          "customer": "@AmazonHelp They sent out the incorrect item and will not allow me to exchange I do not want a refund I want the item I paid for.",
+          "support": "@220650 Some items aren't eligible for an exchange. What options were provided to you? Let us know!! ^MT"
+        },
+        {
+          "customer": "@AmazonHelp @115830 been told Xbox x Scorpio was dispatched in Doncaster yesterday but did not turn up and today they are saying they are not in stock but they have taken my money ??????",
+          "support": "@314213 We would like to look into this closer with you. Please contact us by phone or chat here: https://t.co/JzP7hlA23B ^SD"
+        },
+        {
+          "customer": "I ordered a OnePlus 5 by mistake - I was looking for 5T. Now I cannot return the 5 unless it is damaged? What kind of customer-centric approach is this? Am I not allowed to make an honest mistake? Don't give me money back, give me credit. I'll spend on 5T. @118919",
+          "support": "@144468 For more info, please refer here: https://t.co/gYYDFKUNPY and choose the option 'mobiles and tablets' mentioned in blue colour. (2/2) ^VM"
+        },
+        {
+          "customer": "@AmazonHelp This is so frustrating. What is the point of being a Prime member? I don't even need the money back, just give me Amazon Pay credit. Amazon makes mistakes, you pay money and get away with it. Consumers make mistakes, we need to suffer and live with it?",
+          "support": "@144468 Apologies for the inconvenience due to policy and the suggested system of working. Appreciate your understanding. ^SF"
+        },
+        {
+          "customer": "@118919 i cansel my order and i will  nor get money",
+          "support": "@193114 We would like to help you. Kindly elaborate your concern for us. ^CB"
+        },
+        {
+          "customer": "@AmazonHelp I had ordered a book more than a month ago. .Which was expected till 4th November. Around 15th Nov I called the customer care to cancel my order and for refund. Nor I've got any refund nor the book. Please help",
+          "support": "@812003 We would like to help you. Please share your details with us here: https://t.co/GIJyeYqKE0. We'll get in touch shortly. ^CB"
+        },
+        {
+          "customer": "@AmazonHelp I just got offered a refund but I’d rather just have the refund in a gift card instead of having to wait 30 days",
+          "support": "@128911 Let's check here to see if that is an option we can offer: https://t.co/hApLpMlfHN ^JZ"
+        }
+      ]
+    },
+    "payment": {
+      "count": 8318,
+      "percentage": 8.52,
+      "examples": [
+        {
+          "customer": "@AmazonHelp MY ACCOUNT COD ISSUE NOT YET FIXED UNABLE TO BUY MOBILES LIKE ONEPLUS5 MOTOG5..AMAZON IS USELESS\r#Flipkartisbest @118702",
+          "support": "@280255 We've sent the correspondence to your registered email ID. Kindly check it here: https://t.co/8DAc10S7ww ^GK"
+        },
+        {
+          "customer": "@115850 If I done 3 transaction of 500 each with amazonpay balance will I get cashback on 1St or on both 3 (50 on each) \nplease clear this issue",
+          "support": "@312149 As per the terms and conditions, you will receive a cashback on only the first transaction, Rajat. ^KS"
+        },
+        {
+          "customer": "@AmazonHelp I see my current credit card on file (plus two old expired ones), and I have a chance to add a new method.",
+          "support": "@419460 Thanks for letting us know. Please reach out to us via phone here: https://t.co/hApLpMlfHN and we'll take a closer look! ^JO"
+        },
+        {
+          "customer": "@AmazonHelp help. i cant login into my account. It asks for code, but it never arrives. To log a ticket, i have to sign in! frustrating",
+          "support": "@219462 Sorry to hear, please call us on the number found via this link: https://t.co/zYVX1Qi29G so an agent can look into this further. ^JJ"
+        },
+        {
+          "customer": "Absolutely fuming with @115830 ordered a surprise Christmas present and it arrived just as it was, without the brown cardboard wrapping. So the person who was supposed to be getting it as a surprise saw it when it was delivered!!!! Furious!!! You've ruined Christmas! 😡😡😡 https://t.co/towxVjCTri",
+          "support": "@726339 Oh no! I'm so sorry this happened! When you have a moment, please contact us here to leave feedback about your experience: https://t.co/sNNrcRsJWv and you can review some information here about packaging:  https://t.co/3CAOk5IGHu ^SM"
+        },
+        {
+          "customer": "@AmazonHelp C’est sur je maîtrise tous les codes d Amazon maintenant",
+          "support": "@370381 Dans ce cas, dites-en moi un peu plus sur vos connaissances Amazoniennes via ce formulaire : https://t.co/HtUowfLjin \n^SB"
+        },
+        {
+          "customer": "Hey @115850 pls allow cod for products of 30k or above... It's very difficult for those whose  ATM card limit is 25k. Pls☺",
+          "support": "@466963 I understand your query. I'll certainly forward your feedback internally for a review. Appreciate your understanding. ^BS"
+        },
+        {
+          "customer": "@AmazonHelp @122232 Sorry should’ve read can I claim back delivery charge.",
+          "support": "@281285 Let's take a closer look into what options we have here: https://t.co/JzP7hlA23B ^JZ"
+        },
+        {
+          "customer": "@115821 That says would be here Friday today and didn’t get the one that I NEEDED and PAID for to be here today.........",
+          "support": "@161930 I'm sorry for the mix up! What was the delivery date you were given for your bathing suit? ^GG"
+        },
+        {
+          "customer": "@AmazonHelp hi, why was I charged twice for one item? (As in, 2 x the price of the item has been charged to my card, so it’s not just an authorization issue)",
+          "support": "@400547 Authorizations can take 3-5 business days to drop off so it may appear that there are two charges. We're happy to take ^ RM (1/2)"
+        }
+      ]
+    },
+    "account": {
+      "count": 7043,
+      "percentage": 7.21,
+      "examples": [
+        {
+          "customer": "@AmazonHelp MY ACCOUNT COD ISSUE NOT YET FIXED UNABLE TO BUY MOBILES LIKE ONEPLUS5 MOTOG5..AMAZON IS USELESS\r#Flipkartisbest @118702",
+          "support": "@280255 We've sent the correspondence to your registered email ID. Kindly check it here: https://t.co/8DAc10S7ww ^GK"
+        },
+        {
+          "customer": "@AmazonHelp straight up lied to by the logistics people, about whether they would be attempting redelivery, or what would be bundled together, etc.",
+          "support": "@452862 Oh my, we'd like to have a specialist to look at this! Pls leave your info here &amp; we'll be in touch: https://t.co/770lpyctU6 ^KN"
+        },
+        {
+          "customer": "@AmazonHelp help. i cant login into my account. It asks for code, but it never arrives. To log a ticket, i have to sign in! frustrating",
+          "support": "@219462 Sorry to hear, please call us on the number found via this link: https://t.co/zYVX1Qi29G so an agent can look into this further. ^JJ"
+        },
+        {
+          "customer": "@AmazonHelp C’est sur je maîtrise tous les codes d Amazon maintenant",
+          "support": "@370381 Dans ce cas, dites-en moi un peu plus sur vos connaissances Amazoniennes via ce formulaire : https://t.co/HtUowfLjin \n^SB"
+        },
+        {
+          "customer": "@AmazonHelp Desde que Amazon logistics se encarga de los envíos, 3 de 2 han llegado tarde. Prime 1 Día se ha convertido en Prime 2-3 días",
+          "support": "@696631 Hola, David. Lamentamos los inconvenientes. ¿Tienes algún pedido pendiente de entrega? Si es así ¿cuál es la fecha de entrega estimada? ^AA"
+        },
+        {
+          "customer": "@AmazonHelp WHAT THE FUCKING HELL WHEN DID I SIGN UP! https://t.co/rNlyN4MM2D",
+          "support": "@204172 I'm sorry about the unexpected charge! You can cancel and apply for a refund here: https://t.co/8jmLesCrlW We hope this helps. ^HC"
+        },
+        {
+          "customer": "It should come as no surprise but #AmazonLogistics screwed up again today, thanks @115821 -- 0/3 days without a delivery",
+          "support": "@425206 We'd like to take a closer look into this. Please send us your details here: https://t.co/djqiRBnW4E ^LI"
+        },
+        {
+          "customer": "@115821 @AmazonHelp you all have just gone horrible with your customer service. 2day is day 3 of no sign of delivery. Disgusted with you https://t.co/mUi3Rjd7AS",
+          "support": "@297517 Apologies for your experience. Have you submitted your details through the secured link provided so we could reach out to you? ^HK"
+        },
+        {
+          "customer": "@AmazonHelp We haven’t been able to access our account because there is an old phone number on file. Can u help?",
+          "support": "@185401 I'm sorry for the trouble with this! We'd like to take a closer look with you, please reach out to us here: https://t.co/vE7wlvKLJl ^SB"
+        },
+        {
+          "customer": "@AmazonHelp why have I had no response on the fact that you’ve incorrectly put a hold on my account for the second time in 24 hours",
+          "support": "@313526 Hi. Please use this link to get in touch and we'll investigate: https://t.co/jzvkhdlrK5 ^RL"
+        }
+      ]
+    },
+    "prime_video": {
+      "count": 10914,
+      "percentage": 11.18,
+      "examples": [
+        {
+          "customer": "@115830 delivery service is shockingly poor,  a 12 hour delivery window and items still not arrived after 2 Days. #badservice #amazon #prime",
+          "support": "@183708 Apologies for the delay, what is the current status on the tracking?^CN"
+        },
+        {
+          "customer": "@116875 esos de Amazon me quedaron mal con un envío prime de mi ps4 pro tsssss uno confiando en ellos y puras fallas",
+          "support": "@143578 ¡Hola Alan! Lamentamos el inconveniente. ¿El producto fue vendido y distribuido por Amazon o por un Vendedor Externo?\n¡Saludos!\n^FQ"
+        },
+        {
+          "customer": "@AmazonHelp Es el vendido por amazon México, lo compre con envío prime, no llego u_u",
+          "support": "@143578 Comprendo tu molestia. Debido que no tenemos acceso a tu cuenta por este medio, lo ideal sería contactar directamente con Servicio al Cliente, un agente podrá revisar con más detalle y decirte que ha pasado.\nPuedes acceder a este enlace: https://t.co/beR78zMMYB\n^FQ"
+        },
+        {
+          "customer": "@147807 \nI'm a Amazon India prime seller. I need help",
+          "support": "@384512 Please connect with our support team here: https://t.co/fGkjrBCGjx for assistance. ^RW"
+        },
+        {
+          "customer": "@AmazonHelp Si je patiente pour commander sur Amazon vous allez toucher moins de prime 🤣il sert à quoi le lien il demande juste mon Twitter ?",
+          "support": "@370381 C'est pour garder une traçabilité de notre mémorable échange. Vous saurez le reste bientôt 😉😉 ^SB"
+        },
+        {
+          "customer": "@AmazonHelp while prime is now available in Belgium, how do we watch the video on TV with Dolby Digital? Airplay not Chromecast are a solution, and my TV &amp; BD player (both Sony) do not offer an Amazon app in their AppStore (for this region). Other options?",
+          "support": "@668362 Hi, learn more about compatible devices here: https://t.co/qSaaRkISOW Regards ^MI"
+        },
+        {
+          "customer": "@AmazonHelp Desde que Amazon logistics se encarga de los envíos, 3 de 2 han llegado tarde. Prime 1 Día se ha convertido en Prime 2-3 días",
+          "support": "@696631 Hola, David. Lamentamos los inconvenientes. ¿Tienes algún pedido pendiente de entrega? Si es así ¿cuál es la fecha de entrega estimada? ^AA"
+        },
+        {
+          "customer": "Daughter is 1500 miles away at school and sick with a bug. God bless Amazon prime now for delivering soup and crackers when this dad can’t be there.",
+          "support": "@819088 Glad we were able to assist! ^TR"
+        },
+        {
+          "customer": "@115850 your Prime is useless!! Worst !! Still waiting for dispatch my items",
+          "support": "@186968 Sorry about the stretch. Could you confirm the estimated date of delivery provided for the order? ^MS"
+        },
+        {
+          "customer": "@AmazonHelp I think prime is not beneficial at my location so can i withdraw this service ?",
+          "support": "@186968 Please connect with our support team here: https://t.co/2ZCfU3AvYU and we'll be happy to help. ^SH"
+        }
+      ]
+    },
+    "product": {
+      "count": 10008,
+      "percentage": 10.25,
+      "examples": [
+        {
+          "customer": "@115830 delivery service is shockingly poor,  a 12 hour delivery window and items still not arrived after 2 Days. #badservice #amazon #prime",
+          "support": "@183708 Apologies for the delay, what is the current status on the tracking?^CN"
+        },
+        {
+          "customer": "Hey @115850 pls allow cod for products of 30k or above... It's very difficult for those whose  ATM card limit is 25k. Pls☺",
+          "support": "@466963 I understand your query. I'll certainly forward your feedback internally for a review. Appreciate your understanding. ^BS"
+        },
+        {
+          "customer": "@115850 u sold me defective phone. Need to rush to service centre just in 2 weeks.\n@AmazonHelp @115850 cheats with their customers.\nOrder Number : 406-9173437-3255502. \n\nSeeking help.",
+          "support": "@787949 Apologies that you've received a defective product. Please fill in your details here: https://t.co/GIJyeYqKE0 and we'll assist you accordingly. \nPlease don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^PJ"
+        },
+        {
+          "customer": "@115850 your Prime is useless!! Worst !! Still waiting for dispatch my items",
+          "support": "@186968 Sorry about the stretch. Could you confirm the estimated date of delivery provided for the order? ^MS"
+        },
+        {
+          "customer": "@AmazonHelp It was a game pre-order using Amazon prime, free Two-Day Shipping. These types of products usually ship 2 days before when I pre-order them.",
+          "support": "@727877 I see. We aim to deliver by the delivery date we provided via checkout/e-mail, unless we've notified you to explain otherwise. Please let us know if it doesn't arrive by 8 PM tomorrow. ^WJ"
+        },
+        {
+          "customer": "@AmazonHelp I placed a return request for another item today but I wasn't allowed to change the bank account for refund",
+          "support": "@181741 You can use the shared below to reach out to our support team. They will help you sort this. ^CB"
+        },
+        {
+          "customer": "@AmazonHelp hi, why was I charged twice for one item? (As in, 2 x the price of the item has been charged to my card, so it’s not just an authorization issue)",
+          "support": "@400547 Authorizations can take 3-5 business days to drop off so it may appear that there are two charges. We're happy to take ^ RM (1/2)"
+        },
+        {
+          "customer": "Instead of @8815 , I used the new @1384 app for grocery shopping and got the order items neatly packed and labelled with zero shipping charge in 4 hours. #navalsmusings https://t.co/cXdCjJk1Us",
+          "support": "@665482 Thank you indeed for keeping us inspired to do such great work. Have a super Sunday. ;) ^SG"
+        },
+        {
+          "customer": "@AmazonHelp They sent out the incorrect item and will not allow me to exchange I do not want a refund I want the item I paid for.",
+          "support": "@220650 Some items aren't eligible for an exchange. What options were provided to you? Let us know!! ^MT"
+        },
+        {
+          "customer": "And once again Amazon Logistics screwed up a delivery! Right apartment number, wrong address. Good grief!",
+          "support": "@249038 I'm sorry for the trouble. We're here to help! To clarify, did you receive an item that wasn't yours or was it your order that was delivered to the wrong address? ^SG"
+        }
+      ]
+    },
+    "seller": {
+      "count": 1384,
+      "percentage": 1.42,
+      "examples": [
+        {
+          "customer": "@147807 \nI'm a Amazon India prime seller. I need help",
+          "support": "@384512 Please connect with our support team here: https://t.co/fGkjrBCGjx for assistance. ^RW"
+        },
+        {
+          "customer": "Worst experience with #AmazonIndia.I rescheduled my order #171-2891747-2220358,but they returned it to seller #cloudtail. Pathetic service",
+          "support": "@337986 Please don't provide your order details, as we consider it to be personal info. Our page is visible to the public. 3/3 ^OS"
+        },
+        {
+          "customer": "@81748 - Amazon seller Cloudtail India Private Limited charged excess Amount than MRP. PFA for ur reference. What quality check in Amazon? https://t.co/w5a9L2GXZi",
+          "support": "@527741 I get your concern. We attempt to ensure MRP information is accurate. Rarely, there may be cases where MRP of the 1/2 ^NK"
+        },
+        {
+          "customer": "Amazon logistics is probably going to be the end of @115821. Love the marketplace but delivery is no longer reliable in our area. Only 1 out of 3 orders actually showed up! Not so 'Prime' service",
+          "support": "@226478 Thank you for being a Prime member. I'm sorry to hear that only 1 of your orders arrived on time. What is the status of the other 2 at this time? You can confirm here: https://t.co/Y5jpI9gRhE. ^SY"
+        },
+        {
+          "customer": "@AmazonHelp I've tried but no response from any of them. It's a real shame as buying direct from Amazon is always great, pity some sellers let it down",
+          "support": "@121901 Your orders may be eligible for an A-to-z Guarantee Claim. More info about eligibility here: https://t.co/9bB58o219Q ^LJ"
+        },
+        {
+          "customer": "@115850 @AmazonHelp \nWhat is the process of cashback while the defaulter is your seller?",
+          "support": "@176384 I'm unable to comprehend your concern. Kindly elaborate. ^MK"
+        },
+        {
+          "customer": "@AmazonHelp If your seller is unable to fulfill order from their side,will i receive the cash back if other products accompanied with that is under 1",
+          "support": "@176384 We'd like to know this better. Please connect with us here: https://t.co/TdDksLo6Mf and we'll get this checked. ^HD"
+        },
+        {
+          "customer": "@115830 hi how do I delete my Amazon seller account please?",
+          "support": "@438210 Sorry to see you go, Vicky! We have information on closing your seller account here: https://t.co/uBVYf7D7h5 ^BL"
+        },
+        {
+          "customer": "@AmazonHelp I contacted the seller, no response, contacted Amazon, rep tells me to contact the seller. I try to leave a review that says, product broke, no response from seller. Told that’s not allowed. I’m losing confidence in Amazon’s marketplace.",
+          "support": "@672915 This isn't the experience we strive to provide, truly sorry! If there's no response from the seller, please file an A-to-z Claim. Learn how: https://t.co/8959An1ryE ^JE"
+        },
+        {
+          "customer": "@AmazonHelp The seller is the manufacturer and provides a warranty of 12 months. Look at the 2-1 star reviews for the product they are all consistent. The seller doesn’t respond or honor the warranty and the product breaks. So basically no recourse for the buyer https://t.co/zm8wJvyOkv",
+          "support": "@672915 We'd like another chance to look into this. Please reach out once more by phone here: https://t.co/hApLpMlfHN ^LI"
+        }
+      ]
+    },
+    "promotion": {
+      "count": 2456,
+      "percentage": 2.52,
+      "examples": [
+        {
+          "customer": "@115850 If I done 3 transaction of 500 each with amazonpay balance will I get cashback on 1St or on both 3 (50 on each) \nplease clear this issue",
+          "support": "@312149 As per the terms and conditions, you will receive a cashback on only the first transaction, Rajat. ^KS"
+        },
+        {
+          "customer": "@AmazonHelp while prime is now available in Belgium, how do we watch the video on TV with Dolby Digital? Airplay not Chromecast are a solution, and my TV &amp; BD player (both Sony) do not offer an Amazon app in their AppStore (for this region). Other options?",
+          "support": "@668362 Hi, learn more about compatible devices here: https://t.co/qSaaRkISOW Regards ^MI"
+        },
+        {
+          "customer": "@115821.co.uk do  you guys have #BlackFriday deals?",
+          "support": "@270739 You can see our Black Friday deals here: https://t.co/Hs7QU1cM4v! ^LR"
+        },
+        {
+          "customer": "@115850 Need Some Good Deals On iPad 2017 Model...??",
+          "support": "@171324 I understand your concern regarding the deals and offers available on iPad.  Kindly reach out to our support team here:https://t.co/vlvfJr4nN9 so that we can take more information and assist you accordingly. ^EM"
+        },
+        {
+          "customer": "@AmazonHelp Details Forward... Hope To See Your Reply Soon... Wish To Get Some Good Offers So I Can Make Purchases of My iPad... I Am Short of Money.... So Please Bring Some Good Offers... And Be My Santa.... 😊😊",
+          "support": "@171324 Appreciate your support. You will find all the genuine &amp; best deals on our website. ^RW"
+        },
+        {
+          "customer": "Dear @115830 Thanks for the good deals 👍 Now time to rip them up https://t.co/OEBnx64cWu",
+          "support": "@267761 Glad to hear you got some great deals...... Why tear up the boxes when you can make a box Fort? ^MI"
+        },
+        {
+          "customer": "@117086 mores, a promo feira do livro...só vale para livro físico ou ebook tá valendo  também ?",
+          "support": "@325659 Olá, Gisa. Você está falando da promoção da Bienal do Livro 2017? ^CR"
+        },
+        {
+          "customer": "@AmazonHelp The cashback has not been credited and its more than 4 months and Amazon tell no account exist and if it doesn't then how i have order no",
+          "support": "@199548 Have you contacted us from the account that was used to place the order? If not, please do so. ^HA"
+        },
+        {
+          "customer": "@AmazonHelp my book rental is missing pages and customer service offered me $5 gift card smh 🤦🏽‍♂️",
+          "support": "@128911 I'm sorry your book was missing pages. Were we able to replace the book? ^CO"
+        },
+        {
+          "customer": "@AmazonHelp I just got offered a refund but I’d rather just have the refund in a gift card instead of having to wait 30 days",
+          "support": "@128911 Let's check here to see if that is an option we can offer: https://t.co/hApLpMlfHN ^JZ"
+        }
+      ]
+    },
+    "customer_service": {
+      "count": 20121,
+      "percentage": 20.61,
+      "examples": [
+        {
+          "customer": "@115850 @118702 Now I have shared everything with you again, now lets see whether you can solve it or not. Don't just say me to wait more than 2 months",
+          "support": "@280255 We've received your details. We'll work on it and reach out to you soon. ^AP"
+        },
+        {
+          "customer": "Hey, I saw the good reviews and bought the earphones. 2 months and gone. @115850 Feeling cheated.",
+          "support": "@338741 Sorry about this experience. Please report this to our support team here: https://t.co/TdDksLo6Mf and we'll look into this. ^HD"
+        },
+        {
+          "customer": "@115830 delivery service is shockingly poor,  a 12 hour delivery window and items still not arrived after 2 Days. #badservice #amazon #prime",
+          "support": "@183708 Apologies for the delay, what is the current status on the tracking?^CN"
+        },
+        {
+          "customer": "This is an appreciation post for amazon's service. When the india team could not resolve my echo issues, they put... https://t.co/0NWSUA8xFa",
+          "support": "@482227 Aww thank you, we appreciate the kind words and we're here to help if you need us :) ^KA"
+        },
+        {
+          "customer": "@115830 get cut off after 25 mins on the phone. Guaranteed a delivery today. Not even with the courier...your customer service is a joke!",
+          "support": "@489141 I'm so sorry that your item didn't arrive in time! Can you tell me the status &amp; carrier:  https://t.co/aaDyEz1VgE ^FR"
+        },
+        {
+          "customer": "@AmazonHelp hello there, who do I report spam/fraudulent emails to please? The email is clearly not from yourselves. Thank you",
+          "support": "@511886 Thanks for making us aware of this, Amy! Learn more about reporting suspicious e-mails here: https://t.co/I8l66zHUT7 ^SH"
+        },
+        {
+          "customer": "@AmazonHelp LOL Jack jones levis et geox Reebok les prix enfaite je devais refaire ma garde robe g tous acheter chez vous même mon i phone",
+          "support": "@370381 Très bon goût, un style décontracté ! Refaire sa garde-robe, j'aimerais faire ça chaque semaine 😉 ^SB"
+        },
+        {
+          "customer": "@AmazonHelp Heureusement je vous ai pas donner ma liste d’achat il y a 26 articles en suspens  😂 sans compter la commande que j’ai faire aujourd’hui",
+          "support": "@370381 Merci encore pour la confiance et la fidélité. L'aventure continue avec Amazon...☺️☺️ \n^MD"
+        },
+        {
+          "customer": "@115821 Fix the survey we receive after picking up our first locker delivery. It will give you inaccurate results of customer experience. https://t.co/mMXFpGhSQ5",
+          "support": "@214952 Thank you for bringing this to our attention! I've escalated this to the proper team. ^KB"
+        },
+        {
+          "customer": "@115850 u sold me defective phone. Need to rush to service centre just in 2 weeks.\n@AmazonHelp @115850 cheats with their customers.\nOrder Number : 406-9173437-3255502. \n\nSeeking help.",
+          "support": "@787949 Apologies that you've received a defective product. Please fill in your details here: https://t.co/GIJyeYqKE0 and we'll assist you accordingly. \nPlease don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^PJ"
+        }
+      ]
+    }
+  },
+  "support_response_patterns": {
+    "asks_for_more_information": {
+      "count": 20824,
+      "percentage": 21.33,
+      "examples": [
+        {
+          "customer": "@115850 Not good company Amazon",
+          "support": "@190745 That's quite a remark. We'd like to help. Could you let us know if there's any issue pending. Do keep us posted. ^AK"
+        },
+        {
+          "customer": "@115850 @118702 Now I have shared everything with you again, now lets see whether you can solve it or not. Don't just say me to wait more than 2 months",
+          "support": "@280255 We've received your details. We'll work on it and reach out to you soon. ^AP"
+        },
+        {
+          "customer": "@115830 Packaging overkill 😂 😂 😂 that's one toy v one fully grown adult! https://t.co/rNTDIZEJOp",
+          "support": "@672046 Can you provide further feedback about the packaging here: https://t.co/fxgZ6hTrFA to help us improve? On a side note that really doesn't look like a comfortable position to squeeze into! ^MI"
+        },
+        {
+          "customer": "@115850 u sold me defective phone. Need to rush to service centre just in 2 weeks.\n@AmazonHelp @115850 cheats with their customers.\nOrder Number : 406-9173437-3255502. \n\nSeeking help.",
+          "support": "@787949 Apologies that you've received a defective product. Please fill in your details here: https://t.co/GIJyeYqKE0 and we'll assist you accordingly. \nPlease don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^PJ"
+        },
+        {
+          "customer": "@AmazonHelp I will really appreciate if you help me proactively, not like the last customer support associate who cut the call in between with disrespect.\n@115851",
+          "support": "@787949 We've received your details and we'll help you with an appropriate resolution. Keep an eye on your mailbox. ^AS"
+        },
+        {
+          "customer": "It should come as no surprise but #AmazonLogistics screwed up again today, thanks @115821 -- 0/3 days without a delivery",
+          "support": "@425206 We'd like to take a closer look into this. Please send us your details here: https://t.co/djqiRBnW4E ^LI"
+        },
+        {
+          "customer": "@115821 @AmazonHelp you all have just gone horrible with your customer service. 2day is day 3 of no sign of delivery. Disgusted with you https://t.co/mUi3Rjd7AS",
+          "support": "@297517 Apologies for your experience. Have you submitted your details through the secured link provided so we could reach out to you? ^HK"
+        },
+        {
+          "customer": "@AmazonHelp Yes i have submitted i am so frustrated i just ended chat",
+          "support": "@297517 I completely understand, Owais. We'd want to fix this for you, thanks for filling in the details. We'll contact you soon. ^JC"
+        },
+        {
+          "customer": "@AmazonHelp @AmazonHelp @115821 \nDay 4 no delivery no reply no response\nYou all have from bad to horrible new levels of achieving customer satisfaction",
+          "support": "@297517 If the details are shared, an email will be sent with a reply. Kindly check from the link shared here: https://t.co/NTkrxpsbHJ ^HR"
+        },
+        {
+          "customer": "@AmazonHelp Frgt abt email today is day4 where the hell is my stupid order oh god m tired n frustrated with you all @115821",
+          "support": "@297517 Could you please check and confirm if you've received any correspondence from our side here: https://t.co/NTkrxpsbHJ ? ^AB"
+        }
+      ]
+    },
+    "redirects_to_customer_service": {
+      "count": 5516,
+      "percentage": 5.65,
+      "examples": [
+        {
+          "customer": "@AmazonHelp seriously? At least 3 of these packets were opened.... https://t.co/HH7tMAL6fR",
+          "support": "@795388 Yikes! I'm so sorry your order arrived like this. Please reach out to us via phone or chat so we can look into options: https://t.co/hApLpMlfHN. ^DG"
+        },
+        {
+          "customer": "@AmazonHelp help. i cant login into my account. It asks for code, but it never arrives. To log a ticket, i have to sign in! frustrating",
+          "support": "@219462 Sorry to hear, please call us on the number found via this link: https://t.co/zYVX1Qi29G so an agent can look into this further. ^JJ"
+        },
+        {
+          "customer": "Absolutely fuming with @115830 ordered a surprise Christmas present and it arrived just as it was, without the brown cardboard wrapping. So the person who was supposed to be getting it as a surprise saw it when it was delivered!!!! Furious!!! You've ruined Christmas! 😡😡😡 https://t.co/towxVjCTri",
+          "support": "@726339 Oh no! I'm so sorry this happened! When you have a moment, please contact us here to leave feedback about your experience: https://t.co/sNNrcRsJWv and you can review some information here about packaging:  https://t.co/3CAOk5IGHu ^SM"
+        },
+        {
+          "customer": "@AmazonHelp Today! 10/4/17",
+          "support": "@161930 Please contact us at the following link and let us know we missed that date to review our options: https://t.co/7JUmpzfcI5 ^WT"
+        },
+        {
+          "customer": "@AmazonHelp I’ve already raised my issue to customer care last night. I need to place an order but you keep cancelling it.",
+          "support": "@313526 Were you advised what the issue was when you contacted Customer Service? ^KM"
+        },
+        {
+          "customer": "@AmazonHelp I need to know why you keep blocking it!",
+          "support": "@313526 Apologies - we can not access your Account via Social Media - pls contact us so we can assist ^TD"
+        },
+        {
+          "customer": "@AmazonHelp @115830 been told Xbox x Scorpio was dispatched in Doncaster yesterday but did not turn up and today they are saying they are not in stock but they have taken my money ??????",
+          "support": "@314213 We would like to look into this closer with you. Please contact us by phone or chat here: https://t.co/JzP7hlA23B ^SD"
+        },
+        {
+          "customer": "@AmazonHelp No, all it said on the label was a Gift from Amazon.",
+          "support": "@171449 We'd like to look into this further with you. Please reach out to us by phone or chat here: https://t.co/qy3J24VGxb ^GR"
+        },
+        {
+          "customer": "@115850 Not able to get any feedback on my order # 4036212003-7629928 despite being placed on 16th Nov and several reminder through mail.",
+          "support": "@646555 Sorry about your recent experience, Gopal. Kindly contact us here: https://t.co/vlvfJr4nN9 &amp; we'll get it checked for you. \nPlease don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^SY"
+        },
+        {
+          "customer": "@134688 @115830 Hi! I’ve contacted them but as yet I haven’t had any response... Just frustrating as I bought the lens for use over the weekend just gone",
+          "support": "@506917 Hi, sorry to hear that. Please contact us by chat here: https://t.co/2n73phHPtG so an agent can look into this for you. ^JJ"
+        }
+      ]
+    },
+    "asks_customer_to_dm": {
+      "count": 710,
+      "percentage": 0.73,
+      "examples": [
+        {
+          "customer": "@AmazonHelp Check DM",
+          "support": "@186968 We'll respond to your DM. Kindly check. ^NR"
+        },
+        {
+          "customer": "@115850 I ordered one cell phone on 25 or24 November to be delivered to a Allahabad address paid by HDFCBank credit card \nThe same is not being reflected in the order history \nPrice was Rs 9999/ \nCan you help asap please DM",
+          "support": "@799142 That's strange! Once the order is placed, a confirmation email/SMS will be sent to you with the order details. Please check for the email and keep us posted for further assistance. Due to security reasons we may not contact you via DM until you contact us from DM. ^BS"
+        },
+        {
+          "customer": "@AmazonHelp @183848 WORST SERVICE\nPLZ REPLY TO MY DM",
+          "support": "@121400 We've responded to your DM as requested. ^RB"
+        },
+        {
+          "customer": "@AmazonHelp Please simply answer my question.  I am not an AmazonFresh customer, just a condominium unit owner inconvenienced by UR customers  &amp;trying 2 figure out how we can all accommodate one another.  Y R U making this so complicated? Direct message me with UR contact info.",
+          "support": "@118951 We'll ask customers to leave their totes out for pickup. However, they shouldn't be left for 10 or more days awaiting pickup. For security, we're unable to DM personal details. Once we receive your information at the link we've referenced, we can help sort this. ^RA"
+        },
+        {
+          "customer": "@115850 : Possible to ship my Order #403-5585763-2592307 on 21st? It is a gift for my wife for my anniversary! TIA (fingers crossed)",
+          "support": "@771035 We have responded to you via DM. Kindly check. Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^SD"
+        },
+        {
+          "customer": "@AmazonHelp do you want me to message you directly? I guess replying here wouldn't help me explain.",
+          "support": "@285049 We'd be happy to help if we can via either post or DM. Please feel free to use the DM link below if you prefer. ^SJ https://t.co/1XyLaGkcaN"
+        },
+        {
+          "customer": "@AmazonHelp Je n'ai pas reçu ma commande qui devait être livrée le 25 au plus tard.",
+          "support": "@426263 Je viens de répondre à votre DM :)"
+        },
+        {
+          "customer": "@652759 @12370 Je suis grave intéressé, dispo dm ? (j'ai quelques questions)",
+          "support": "@652758 Bien sûr, vous pouvez nous contacter par DM ! ^AR"
+        },
+        {
+          "customer": "Such a ridiculous service by #AmazonIndia.Rescheduled my delivery without informing me.Cancelling my order now.",
+          "support": "@687606 We've responded to your DM, please check. ^KA"
+        },
+        {
+          "customer": "@115830 Can we DM please? I'm having problems logging into my account as I can't get past this page. I have submitted the form several times with different codes but I can't get past... As a matter of urgency please? Thanks! https://t.co/tW0sb8ezn5",
+          "support": "@135624 Hey, Frankie! Sure, feel free to DM us! Just to clarify, have you tried resetting your password yet? You can respond via DM or tweet, which ever works better for you! ^DY https://t.co/1XyLaGkcaN"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "count": 753,
+      "percentage": 0.77,
+      "examples": [
+        {
+          "customer": "@116439 was there an update to @684 overnight that automatically steams 480p? Asking for a friend. #help",
+          "support": "@548446 We'd like to help. Let's try these troubleshooting steps here: https://t.co/RUaDGtoa5f and let us know if the issue persists. ^GG"
+        },
+        {
+          "customer": "@AmazonHelp Yes we have. It is super slow to load anything and bails out of opening anything about 25% of the time.",
+          "support": "@334209 We'd like to do some live troubleshooting! Please get in touch with us by phone or chat here: https://t.co/hApLpMlfHN ^KJ"
+        },
+        {
+          "customer": "@AmazonHelp I haven't, but that's because I'm on a galaxy 7. I did, however go through their equivalent steps on my phone.",
+          "support": "@123960 Let's see! Please reach out to us by phone or chat for live troubleshooting steps here: https://t.co/hApLpM3Ejd ^KJ"
+        },
+        {
+          "customer": "Why does my @115821 Firestick say WiFi not in range when the router is next to it and all other devices are fine?",
+          "support": "@236949 I'm so sorry for this frustrating experience, Cate. Have you tried resetting the Firestick?  You can also check these troubleshooting steps here: https://t.co/myQQnFj2FM ^HS"
+        },
+        {
+          "customer": "@115833 lots of issues setting up Echo Plus as hub for Philips Hue. Contact me for details. Needs sorting urgently.",
+          "support": "@484996 We're here to help! Please, reach us via phone/chat so that we may troubleshoot here: https://t.co/JzP7hlA23B ^JE"
+        },
+        {
+          "customer": "@AmazonHelp You’ve gotta be kidding! Spent over an hour ‘troubleshooting’ with one of your inexperienced staff. Got nowhere. Have an expert call me.",
+          "support": "@484996 Can you tell us more about what's happening? What troubleshooting steps have already been taken? We'd like to help!  ^KJ"
+        },
+        {
+          "customer": "@AmazonHelp I only got this stuff yesterday....but it doesn’t do what it suggests. Bulbs near the EchoPlus are fine anything else ends up a nightmare",
+          "support": "@484996 What did customer service advise when they finished the troubleshooting with you? ^PK"
+        },
+        {
+          "customer": "I asked Alexa to play Christmas music today and she starts with Amazon’s COUNTRY list. I say STOP NO COUNTRY MUSIC. Tonight I asked for sleepy music and she plays COUNTRY. I say do not play country I don’t like it! She says ok and then plays Willie Nelson. What to do?@115833",
+          "support": "@164540 Oh no! Let's troubleshoot this in real time! Please call or chat with us here: https://t.co/N6rX4qdYnW ^BA"
+        },
+        {
+          "customer": "@AmazonHelp Still not getting anywhere; various errors - account associated with another jurisdiction, presumably .com rather than .ca. Also request to update payment info - done - still no access",
+          "support": "@715038 We'd like to try some real time troubleshooting with you. When you have a moment, please contact us via phone or chat here: https://t.co/dNXwBZPiM6 ^AC"
+        },
+        {
+          "customer": "@116618 @143798 @115821 streaming issues with the #ThursdayNightFootball game all night audio issues, quality issues etc. Work in it",
+          "support": "@181034 I'm sorry for the trouble! Please restart your Amazon Video device and router/modem by unplugging them for 30 seconds. ^JM"
+        }
+      ]
+    },
+    "provides_link": {
+      "count": 0,
+      "percentage": 0.0,
+      "examples": []
+    },
+    "apology": {
+      "count": 28135,
+      "percentage": 28.81,
+      "examples": [
+        {
+          "customer": "Hey, I saw the good reviews and bought the earphones. 2 months and gone. @115850 Feeling cheated.",
+          "support": "@338741 Sorry about this experience. Please report this to our support team here: https://t.co/TdDksLo6Mf and we'll look into this. ^HD"
+        },
+        {
+          "customer": "@115830 delivery service is shockingly poor,  a 12 hour delivery window and items still not arrived after 2 Days. #badservice #amazon #prime",
+          "support": "@183708 Apologies for the delay, what is the current status on the tracking?^CN"
+        },
+        {
+          "customer": "@115830 get cut off after 25 mins on the phone. Guaranteed a delivery today. Not even with the courier...your customer service is a joke!",
+          "support": "@489141 I'm so sorry that your item didn't arrive in time! Can you tell me the status &amp; carrier:  https://t.co/aaDyEz1VgE ^FR"
+        },
+        {
+          "customer": "@AmazonHelp seriously? At least 3 of these packets were opened.... https://t.co/HH7tMAL6fR",
+          "support": "@795388 Yikes! I'm so sorry your order arrived like this. Please reach out to us via phone or chat so we can look into options: https://t.co/hApLpMlfHN. ^DG"
+        },
+        {
+          "customer": "@AmazonHelp 2/2 … tells me to go to Amazon and cancel from there. It's and endless loop of frustration. https://t.co/HAMeKMkUbN",
+          "support": "@419460 I'm so sorry for the frustrating experience, Cheryl. What happens when you try to edit your payment information? ^FD"
+        },
+        {
+          "customer": "#JCPenny #Dickies #Amazon  Ordered clothes from all 3 same day about  4 weeks ago #Pennies 2 Days #Dickies 4 #Amazon still hasn't come yet",
+          "support": "@177834 I'm so sorry about the delay! Have we missed the delivery date given here: https://t.co/Y5jpI9gRhE? ^AG"
+        },
+        {
+          "customer": "@AmazonHelp help. i cant login into my account. It asks for code, but it never arrives. To log a ticket, i have to sign in! frustrating",
+          "support": "@219462 Sorry to hear, please call us on the number found via this link: https://t.co/zYVX1Qi29G so an agent can look into this further. ^JJ"
+        },
+        {
+          "customer": "Absolutely fuming with @115830 ordered a surprise Christmas present and it arrived just as it was, without the brown cardboard wrapping. So the person who was supposed to be getting it as a surprise saw it when it was delivered!!!! Furious!!! You've ruined Christmas! 😡😡😡 https://t.co/towxVjCTri",
+          "support": "@726339 Oh no! I'm so sorry this happened! When you have a moment, please contact us here to leave feedback about your experience: https://t.co/sNNrcRsJWv and you can review some information here about packaging:  https://t.co/3CAOk5IGHu ^SM"
+        },
+        {
+          "customer": "@AmazonHelp WHAT THE FUCKING HELL WHEN DID I SIGN UP! https://t.co/rNlyN4MM2D",
+          "support": "@204172 I'm sorry about the unexpected charge! You can cancel and apply for a refund here: https://t.co/8jmLesCrlW We hope this helps. ^HC"
+        },
+        {
+          "customer": "@115850 u sold me defective phone. Need to rush to service centre just in 2 weeks.\n@AmazonHelp @115850 cheats with their customers.\nOrder Number : 406-9173437-3255502. \n\nSeeking help.",
+          "support": "@787949 Apologies that you've received a defective product. Please fill in your details here: https://t.co/GIJyeYqKE0 and we'll assist you accordingly. \nPlease don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^PJ"
+        }
+      ]
+    }
+  }
+}

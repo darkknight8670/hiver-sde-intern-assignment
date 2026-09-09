@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "split_method": "random episode-level split",
+  "ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "episodes": {
+    "total": 88629,
+    "train": 62040,
+    "validation": 13294,
+    "test": 13295
+  },
+  "date_ranges": {
+    "train": {
+      "earliest": "2015-06-13T01:34:49+00:00",
+      "latest": "2017-12-03T23:04:17+00:00"
+    },
+    "validation": {
+      "earliest": "2015-07-17T13:53:02+00:00",
+      "latest": "2017-12-03T22:59:36+00:00"
+    },
+    "test": {
+      "earliest": "2015-06-26T19:37:06+00:00",
+      "latest": "2017-12-03T22:50:10+00:00"
+    }
+  },
+  "customer_overlap": {
+    "train_validation": 3272,
+    "train_test": 3223,
+    "validation_test": 940
+  },
+  "tweet_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  }
+}

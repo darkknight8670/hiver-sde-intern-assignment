@@ -1,0 +1,29 @@
+{
+  "trivial": {
+    "n": 200,
+    "intent_accuracy": 0.155,
+    "intent_macro_f1": 0.022366522366522368,
+    "intent_weighted_f1": 0.041601731601731605,
+    "routing_accuracy": 0.72,
+    "routing_macro_f1": 0.4186046511627907,
+    "routing_weighted_f1": 0.6027906976744186
+  },
+  "simple": {
+    "n": 200,
+    "intent_accuracy": 0.53,
+    "intent_macro_f1": 0.5181269311464324,
+    "intent_weighted_f1": 0.533310464354486,
+    "routing_accuracy": 0.35,
+    "routing_macro_f1": 0.32001255361439485,
+    "routing_weighted_f1": 0.2571817135683649
+  },
+  "gemini_agent": {
+    "n": 14,
+    "intent_accuracy": 1.0,
+    "intent_macro_f1": 1.0,
+    "intent_weighted_f1": 1.0,
+    "routing_accuracy": 0.7142857142857143,
+    "routing_macro_f1": 0.6888888888888889,
+    "routing_weighted_f1": 0.688888888888889
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "taxonomy_version": "1.0",
+  "brand": "AmazonHelp",
+  "num_intents": 12,
+  "intents": [
+    {
+      "id": "delivery_issue",
+      "name": "Delivery problem",
+      "description": "Problems with an order's delivery, including late, missing, delayed, misdelivered, or carrier-related shipments.",
+      "include": [
+        "order has not arrived",
+        "delivery is late",
+        "package is delayed",
+        "tracking or carrier problem",
+        "package delivered to wrong address",
+        "delivery date was missed",
+        "shipment was returned during delivery"
+      ],
+      "exclude": [
+        "customer wants to cancel an order",
+        "customer wants a refund after receiving an item",
+        "Prime Video playback problems"
+      ]
+    },
+    {
+      "id": "order_issue",
+      "name": "Order management",
+      "description": "Issues involving creating, changing, cancelling, tracking the state of, or otherwise managing an order.",
+      "include": [
+        "cancel an order",
+        "order keeps getting cancelled",
+        "change an order",
+        "order status question",
+        "pre-order question",
+        "order confirmation problem"
+      ],
+      "exclude": [
+        "pure delivery delay",
+        "refund-only request",
+        "payment charge issue"
+      ]
+    },
+    {
+      "id": "return_refund",
+      "name": "Returns and refunds",
+      "description": "Requests or problems involving returning products, receiving refunds, refund timing, or refund method.",
+      "include": [
+        "request a return",
+        "refund has not arrived",
+        "refund amount is incorrect",
+        "change refund method",
+        "refund to gift card",
+        "return eligibility",
+        "exchange versus refund"
+      ],
+      "exclude": [
+        "duplicate card charge",
+        "COD/payment authorization issue",
+        "delivery delay without a refund request"
+      ]
+    },
+    {
+      "id": "payment_issue",
+      "name": "Payment and charges",
+      "description": "Problems involving payment methods, charges, cash on delivery, card payments, or unexpected/duplicate charges.",
+      "include": [
+        "payment failed",
+        "card payment problem",
+        "cash on delivery problem",
+        "COD eligibility",
+        "charged twice",
+        "unexpected charge",
+        "payment method cannot be changed",
+        "Amazon Pay payment problem"
+      ],
+      "exclude": [
+        "refund status after a return",
+        "general order cancellation",
+        "promotion eligibility unless the issue is specifically payment"
+      ]
+    },
+    {
+      "id": "account_access",
+      "name": "Account access and security",
+      "description": "Problems accessing or securing an Amazon account.",
+      "include": [
+        "cannot log in",
+        "password problem",
+        "OTP/code not received",
+        "old phone number prevents access",
+        "account locked",
+        "account on hold",
+        "suspicious account activity",
+        "account security problem"
+      ],
+      "exclude": [
+        "seller account issues",
+        "payment method problems",
+        "Prime membership questions"
+      ]
+    },
+    {
+      "id": "product_issue",
+      "name": "Product problem",
+      "description": "Problems with a physical product after ordering or receiving it.",
+      "include": [
+        "defective product",
+        "damaged product",
+        "wrong item received",
+        "missing product components",
+        "product does not work",
+        "product quality problem",
+        "product arrived damaged",
+        "product exchange request"
+      ],
+      "exclude": [
+        "package itself is delayed",
+        "refund-only issue without a product problem",
+        "seller policy question"
+      ]
+    },
+    {
+      "id": "prime_video",
+      "name": "Prime Video and digital content",
+      "description": "Technical or availability issues involving Prime Video or Amazon digital video/content.",
+      "include": [
+        "Prime Video playback failure",
+        "video buffering",
+        "video streaming problem",
+        "Prime Video app problem",
+        "video device compatibility",
+        "audio/video synchronization",
+        "cannot watch Prime Video"
+      ],
+      "exclude": [
+        "Prime shipping or delivery",
+        "Prime membership benefits",
+        "physical product problems"
+      ]
+    },
+    {
+      "id": "seller_marketplace",
+      "name": "Seller and marketplace",
+      "description": "Problems involving third-party sellers, marketplace purchases, seller communication, seller disputes, or A-to-z claims.",
+      "include": [
+        "seller did not respond",
+        "seller dispute",
+        "seller failed to fulfill order",
+        "seller charged incorrect amount",
+        "A-to-z Guarantee",
+        "marketplace seller complaint",
+        "seller warranty issue"
+      ],
+      "exclude": [
+        "Amazon direct delivery problem",
+        "Amazon account login problem",
+        "general payment issue"
+      ]
+    },
+    {
+      "id": "promotion_offer",
+      "name": "Promotions, deals and cashback",
+      "description": "Questions or problems involving promotional offers, discounts, deals, coupons, or cashback.",
+      "include": [
+        "discount question",
+        "deal availability",
+        "coupon problem",
+        "cashback eligibility",
+        "cashback missing",
+        "promotion terms",
+        "Black Friday deals"
+      ],
+      "exclude": [
+        "ordinary payment failure",
+        "Prime membership",
+        "refund"
+      ]
+    },
+    {
+      "id": "prime_membership",
+      "name": "Prime membership",
+      "description": "Questions or problems specifically about Prime membership rather than Prime shipping or Prime Video.",
+      "include": [
+        "Prime membership benefits",
+        "cancel Prime",
+        "Prime eligibility",
+        "Prime subscription problem",
+        "Prime membership availability",
+        "Prime service value"
+      ],
+      "exclude": [
+        "Prime delivery delay",
+        "Prime Video playback",
+        "ordinary order problem"
+      ]
+    },
+    {
+      "id": "customer_service",
+      "name": "Customer service and escalation",
+      "description": "Existing support cases where the customer primarily reports poor support, repeated unresolved contact, or requests escalation.",
+      "include": [
+        "previous agent did not resolve issue",
+        "customer has contacted support repeatedly",
+        "complaint about customer service",
+        "request for escalation",
+        "case has been unresolved for a long time",
+        "agent provided conflicting answers"
+      ],
+      "exclude": [
+        "a new issue with a clear underlying intent",
+        "simple delivery complaint unless the main complaint is unresolved support"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Other or unclear",
+      "description": "Amazon-related customer message that cannot be confidently assigned to another intent.",
+      "include": [
+        "ambiguous request",
+        "general Amazon question",
+        "feedback without a clear support problem",
+        "message containing insufficient information"
+      ],
+      "exclude": []
+    }
+  ]
+}

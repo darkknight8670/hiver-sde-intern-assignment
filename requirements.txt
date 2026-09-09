@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+python-dotenv
+tqdm
+kaggle
+PyPDF2
+pytest
+google-genai
