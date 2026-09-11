@@ -362,15 +362,15 @@ python -m src.evaluation.compare
 
 The comparison joins predictions to the golden set using `example_id`.
 
-Current fully evaluated 200-example results:
+Repaired 200-example results:
 
 | System | N | Intent Accuracy | Intent Macro-F1 | Routing Accuracy | Routing Macro-F1 |
 |---|---:|---:|---:|---:|---:|
 | Trivial | 200 | 15.50% | 2.24% | 72.00% | 41.86% |
 | Simple | 200 | 53.00% | 51.81% | 35.00% | 32.00% |
-| Final Groq agent | 200 | 71.50% | 68.66% | 85.50% | 83.54% |
+| Repaired Groq agent | 200 | 73.00% | 68.53% | 76.00% | 74.26% |
 
-The final Groq agent's weighted F1 scores are 71.43% for intent and 86.04% for routing. All three systems use the same 200-example golden-set denominator.
+The repaired Groq agent's weighted F1 scores are 72.34% for intent and 77.20% for routing. All three systems use the same 200-example golden-set denominator.
 
 The simple baseline improves intent accuracy by **37.5 percentage points** over the trivial baseline.
 
@@ -411,7 +411,7 @@ Output:
 results/evaluation/error_analysis.json
 ```
 
-The final agent artifact contains 57 intent errors and 29 routing errors. Its largest observed intent confusions include:
+The repaired final agent artifact contains 54 intent errors and 48 routing errors. Its largest observed intent confusions include:
 
 ```text
 return_refund     -> product_issue (4)
@@ -422,7 +422,7 @@ customer_service  -> product_issue (2)
 delivery_issue    -> customer_service (2)
 ```
 
-Routing errors contain 24 false negatives, where the agent auto-handled a case that was labelled for escalation, and 5 false positives. Representative risks are refunds, seller disputes, complaints after previous support, account/security issues, and order-specific investigations. The full examples are stored in `results/evaluation/error_analysis.json`.
+Routing errors contain 42 false negatives, where the agent auto-handled a case that was labelled for escalation, and 6 false positives. Representative risks are refunds, seller disputes, complaints after previous support, account/security issues, and order-specific investigations. The full examples are stored in `results/evaluation/error_analysis.json`.
 
 ## LLM-as-Judge
 
@@ -451,7 +451,8 @@ The harness is resumable.
 
 ### Final evaluation status
 
-During development, the available Gemini API quota interrupted the initial batch. Groq was subsequently used to complete the final agent evaluation.
+The repaired run uses `answer-leakage-fixed-v2`; it contains 200 unique
+predictions with provider/model metadata.
 
 ```text
 Agent predictions:       200 / 200
@@ -460,11 +461,16 @@ Genuine LLM-judge rows:  200 / 200
 
 The Groq judge results are model-generated quality assessments, not human evaluation.
 
-The genuine Groq judge used provider `Groq` and model `openai/gpt-oss-120b`. Its mean overall score was 4.64/5, median 5/5, and acceptable rate 96.0%. These are automated judge results, not human evaluation.
+The repaired Groq judge mean overall score is 4.675/5, median 5/5, and
+acceptable rate 97.5%. This is an automated result, not human evaluation. A
+40-example human calibration sample produced 12.5% exact agreement, 25.0%
+adjacent agreement, quadratic Cohen's kappa of -0.0384, and mean absolute
+error of 2.5. The judge was substantially more positive than the human
+ratings, so its acceptability score should not be treated as validated.
 
 ## What is misleading about my headline number?
 
-The 200-example score is useful but is not a universal measure of production quality. The golden set is a fixed sample from a random episode-level split, and results depend on the selected Groq model, prompt, historical-example retrieval, and provider behavior. API/provider differences can change outputs. The LLM judge is an automated rubric-based evaluator and may be biased or inconsistent. Baseline and agent metrics use the same 200-example denominator; judge metrics describe response quality separately rather than classification accuracy.
+The 200-example score is useful but is not a universal measure of production quality. The golden set is a fixed sample from a random episode-level split, and results depend on the selected Groq model, prompt, historical-example retrieval, and provider behavior. API/provider differences can change outputs. The LLM judge is an automated rubric-based evaluator and may be biased or inconsistent. On a 40-example human calibration sample, exact agreement was 12.5% and quadratic Cohen's kappa was -0.0384. Baseline and agent metrics use the same 200-example denominator; judge metrics describe response quality separately rather than classification accuracy.
 
 ## Report
 
@@ -472,7 +478,11 @@ The concise submission report, including evaluation methodology, top failure exa
 
 ## Reproduction Notes
 
-The committed golden set, baseline predictions, final agent predictions, judge records, and aggregate JSON files reproduce the reported metrics without API access. Re-running the final agent or judge requires a provider API key and the corresponding model. The original TWCS CSV and generated processed JSONL splits are intentionally excluded because they are large; the committed final predictions contain populated historical AmazonHelp retrieval examples with similarity scores. To rebuild the retrieval corpus or independently rerun the agent evaluation, obtain TWCS and run the data pipeline first.
+The committed golden set, repaired predictions, and judge records reproduce
+the current metrics without API access. Re-running the repaired agent or judge requires a
+provider API key and the corresponding model. The original TWCS CSV and
+generated processed JSONL splits are intentionally excluded because they are
+large; obtain TWCS and run the data pipeline to rebuild the retrieval corpus.
 
 ## Decision Log
 
@@ -548,23 +558,50 @@ Batch evaluation:
 python -m src.evaluation.run_agent
 ```
 
+The repaired evaluation protocol is versioned as `answer-leakage-fixed-v2`.
+Legacy prediction records are ignored automatically and are not reused after
+the golden-set context sanitization. Validate the artifacts before reporting:
+
+```bash
+python -m src.evaluation.validate_artifacts
+```
+
+The current committed artifacts pass this validation.
+
+The completed human calibration uses `human_ratings.jsonl`, which contains 40
+independently rated examples. Re-run it with:
+
+```bash
+python -m src.evaluation.human_agreement human_ratings.jsonl
+```
+
+The calibration found 12.5% exact agreement, 25.0% adjacent agreement,
+quadratic Cohen's kappa of -0.0384, and mean absolute error of 2.5. The judge
+was substantially more positive than the human ratings, so its acceptability
+score is not validated.
+
 ## Final Headline Result and Its Limitation
 
-The final 200-example comparison is:
+The repaired 200-example comparison is:
 
 ```text
 Trivial intent accuracy:      15.50%
 Simple intent accuracy:       53.00%
-Final Groq agent accuracy:    71.50%
-Final Groq agent macro-F1:    68.66%
-Final Groq routing accuracy:  85.50%
+Repaired Groq agent accuracy:    73.00%
+Repaired Groq agent macro-F1:    68.53%
+Repaired Groq routing accuracy:  76.00%
 ```
 
-The final agent was evaluated on all 200 examples. The Groq judge evaluated 200 real agent responses.
+The repaired agent and judge were rerun after context sanitization.
 
 ### What is misleading about my headline number?
 
-The 71.5% intent accuracy and 85.5% routing accuracy are measured on a 200-example set sampled from a held-out test split rather than representing the full TWCS distribution. The final agent uses historical-example retrieval followed by LLM generation, and the result depends on the selected Groq model, prompt, provider behavior, and taxonomy. The automated LLM judge is an additional quality signal, not a production guarantee. These results demonstrate a promising prototype rather than production-level accuracy.
+The repaired 73.0% intent accuracy and 76.0% routing accuracy are measured on
+a 200-example set sampled from a held-out test split rather than the full TWCS
+distribution. The result depends on the selected model, prompt, retrieval
+corpus, provider behavior, and taxonomy. The automated judge is not reliable
+enough to be treated as a validated quality metric: its human calibration
+agreement was poor.
 
 ## Future Work
 
@@ -598,10 +635,10 @@ Explicit Escalation Policy
 Automated Evaluation
 ```
 
-The key final result is:
+The key repaired result is:
 
 ```text
-15.50%  ->  53.00%  ->  71.50% intent accuracy
+15.50%  ->  53.00%  ->  73.00% intent accuracy
 ```
 
 for the trivial baseline, retrieval/rule baseline, and final Groq agent.

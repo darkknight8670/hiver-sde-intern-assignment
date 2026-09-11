@@ -264,12 +264,19 @@ def get_historical_response(episode):
 
 def get_context(episode):
     """
-    Return the complete conversation context in chronological order.
+    Return only turns that precede the evaluated customer message.
+
+    The sampled message is the first customer turn in each selected
+    episode. Later turns include the historical support answer and must
+    not be passed to the model during evaluation.
     """
 
     context = []
 
     for turn in get_turns(episode):
+
+        if turn.get("speaker") == "customer":
+            break
 
         text = turn.get("text", "")
 

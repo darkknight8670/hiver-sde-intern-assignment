@@ -22,6 +22,7 @@ OUTPUT_FILE = (
     / "evaluation"
     / "evaluation_summary.json"
 )
+EVALUATION_VERSION = "answer-leakage-fixed-v2"
 
 
 def load_successful_predictions(path):
@@ -38,7 +39,10 @@ def load_successful_predictions(path):
 
             # IMPORTANT:
             # Only actual model predictions are evaluated.
-            if record.get("status") == "success":
+            if (
+                record.get("status") == "success"
+                and record.get("evaluation_version") == EVALUATION_VERSION
+            ):
                 records.append(record)
 
     return records

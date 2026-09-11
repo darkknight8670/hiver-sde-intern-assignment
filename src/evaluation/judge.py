@@ -11,6 +11,7 @@ from provider import LLMProvider
 GOLDEN_FILE = PROJECT_ROOT / "data/golden/golden_set.jsonl"
 AGENT_FILE = PROJECT_ROOT / "results/evaluation/agent_predictions.jsonl"
 OUTPUT_FILE = PROJECT_ROOT / "results/evaluation/llm_judge.jsonl"
+EVALUATION_VERSION = "answer-leakage-fixed-v2"
 
 
 JUDGE_SYSTEM_PROMPT = """
@@ -111,6 +112,7 @@ def load_existing():
         for record in records
         if (
             record.get("status") == "success"
+            and record.get("evaluation_version") == EVALUATION_VERSION
             and not record.get("mock")
             and not record.get("mock_disclaimer")
             and record.get("example_id")
@@ -128,6 +130,7 @@ def remove_synthetic_records():
         for record in records
         if (
             record.get("status") == "success"
+            and record.get("evaluation_version") == EVALUATION_VERSION
             and not record.get("mock")
             and not record.get("mock_disclaimer")
         )
@@ -236,6 +239,7 @@ def main():
         record["example_id"]: record
         for record in agent_records
         if record.get("status") == "success"
+        and record.get("evaluation_version") == EVALUATION_VERSION
     }
 
     already_judged = load_existing()
@@ -295,6 +299,7 @@ def main():
 
             record = {
                 "example_id": example_id,
+                "evaluation_version": EVALUATION_VERSION,
                 "provider": provider.provider,
                 "model": provider.model,
                 "groundedness": result["groundedness"],

@@ -7,3 +7,4 @@ kaggle
 PyPDF2
 pytest
 google-genai
+groq

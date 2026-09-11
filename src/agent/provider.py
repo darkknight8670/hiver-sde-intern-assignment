@@ -2,7 +2,6 @@ import os
 
 from dotenv import load_dotenv
 from google import genai
-from groq import Groq
 
 
 load_dotenv()
@@ -15,6 +14,14 @@ class LLMProvider:
         self.provider = os.getenv("LLM_PROVIDER", "gemini").lower()
 
         if self.provider == "groq":
+            try:
+                from groq import Groq
+            except ImportError as error:
+                raise RuntimeError(
+                    "The Groq SDK is required when LLM_PROVIDER=groq. "
+                    "Install dependencies with: pip install -r requirements.txt"
+                ) from error
+
             self.model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
             api_key = os.getenv("GROQ_API_KEY")
             if not api_key:

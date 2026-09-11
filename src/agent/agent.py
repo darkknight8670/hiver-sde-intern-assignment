@@ -1,11 +1,10 @@
 import json
-import os
 
 from dotenv import load_dotenv
-from google import genai
 
 from retrieve import HistoricalRetriever
 from prompts import SYSTEM_PROMPT, build_user_prompt
+from provider import LLMProvider
 
 
 load_dotenv()
@@ -13,18 +12,7 @@ load_dotenv()
 
 class SupportAgent:
     def __init__(self):
-        self.api_key = os.getenv("GEMINI_API_KEY")
-        self.model = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
-
-        if not self.api_key:
-            raise RuntimeError(
-                "GEMINI_API_KEY is not set in .env"
-            )
-
-        self.client = genai.Client(
-            api_key=self.api_key
-        )
-
+        self.provider = LLMProvider()
         self.retriever = HistoricalRetriever()
 
     def predict(self, customer_message, context=None):
@@ -44,13 +32,10 @@ class SupportAgent:
         )
 
         # Call Gemini
-        interaction = self.client.interactions.create(
-            model=self.model,
-            input=f"{SYSTEM_PROMPT}\n\n{user_prompt}",
-        )
-
-        # Extract model output
-        raw_output = (interaction.output_text or "").strip()
+        raw_output = self.provider.generate(
+            SYSTEM_PROMPT,
+            user_prompt,
+        ).strip()
 
         if not raw_output:
             raise RuntimeError(
@@ -135,6 +120,8 @@ class SupportAgent:
             "routing_reason": result["routing_reason"],
             "response": result["response"],
             "retrieved_examples": retrieved,
+            "provider": self.provider.provider,
+            "model": self.provider.model,
         }
 
 

@@ -25,11 +25,15 @@ The fixed taxonomy has 12 intents:
 The intended architecture is:
 
 1. Retrieve similar historical AmazonHelp customer/support pairs with TF-IDF.
-2. Include the retrieved evidence and conversation context in the prompt.
+2. Include retrieved evidence and only context that precedes the incoming
+   customer message in the prompt.
 3. Ask the selected LLM to classify intent, select routing, and draft a response.
 4. Parse and validate a fixed JSON schema.
 
-The final provider was Groq using `openai/gpt-oss-120b`. Gemini remains supported as an alternative provider. The final agent uses historical-example retrieval followed by LLM generation; the committed predictions contain populated retrieved examples with similarity scores.
+The final provider is configured through the shared provider adapter. Groq
+using `openai/gpt-oss-120b` is the intended final configuration, and Gemini
+remains supported as an alternative provider. The repaired evaluation protocol
+is versioned as `answer-leakage-fixed-v2`.
 
 ## 5. What I Did Not Build
 
@@ -43,21 +47,40 @@ The fixed 200-example golden set is joined by `example_id`. All baseline and age
 
 The trivial baseline predicts the majority intent and always escalates. The retrieval-plus-rules baseline uses TF-IDF retrieval and deterministic keyword/routing rules. The final agent uses the provider-backed structured LLM path.
 
-## 8. Final Results
+## 8. Evaluation Repair
+
+The original evaluation exposed the target historical support response in
+context. The golden set has been sanitized so only turns before the evaluated
+customer message can be passed to the model. Legacy predictions are excluded
+using evaluation version `answer-leakage-fixed-v2`.
+
+## 9. Final Results
 
 | System | N | Intent accuracy | Intent macro-F1 | Intent weighted-F1 | Routing accuracy | Routing macro-F1 | Routing weighted-F1 |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Trivial | 200 | 15.50% | 2.24% | 4.16% | 72.00% | 41.86% | 60.28% |
 | Retrieval + rules | 200 | 53.00% | 51.81% | 53.33% | 35.00% | 32.00% | 25.72% |
-| Final Groq agent | 200 | **71.50%** | **68.66%** | **71.43%** | **85.50%** | **83.54%** | **86.04%** |
+| Repaired Groq agent | 200 | **73.00%** | **68.53%** | **72.34%** | **76.00%** | **74.26%** | **77.20%** |
 
-The final Groq agent improves intent accuracy by 18.50 percentage points over the retrieval-plus-rules baseline and by 56.00 percentage points over the trivial baseline. Routing accuracy improves by 50.50 percentage points over the retrieval-plus-rules baseline.
+The repaired Groq agent improves intent accuracy by 20.00 percentage points
+over the retrieval-plus-rules baseline. Its routing accuracy is 41.00 points
+higher than the simple baseline and 4.00 points higher than the trivial
+baseline.
 
-The genuine Groq LLM judge evaluated 200 responses using the stated rubric. Mean overall score was 4.64/5, median 5/5, and acceptable rate 96.0%. These are automated judge results, not human evaluation. The judge was not independently calibrated against human ratings, so human-judge agreement is not reported.
+The repaired Groq judge evaluated 200 unique responses: mean overall score
+4.675/5, median 5/5, and acceptable rate 97.5%. These are automated judge
+results, not human evaluation. A human calibration sample of 40 responses was
+also rated using the same 1-5 overall rubric. Judge-human exact agreement was
+12.5%, adjacent agreement was 25.0%, quadratic Cohen's kappa was -0.0384, and
+mean absolute error was 2.5. The judge assigned 4 or 5 to 35 of 40 examples,
+while the human assigned 1 or 2 to 27 examples, indicating substantial
+optimism and poor agreement. The automated 97.5% acceptability figure should
+therefore not be treated as validated response quality.
 
-## 9. Error Analysis
+## 10. Error Analysis
 
-The final agent has 57 intent errors and 29 routing errors. Routing errors contain 24 false negatives and 5 false positives.
+The repaired final agent has 54 intent errors and 48 routing errors. Routing
+errors contain 42 false negatives and 6 false positives.
 
 The most frequent intent confusions are:
 
@@ -70,53 +93,65 @@ The most frequent intent confusions are:
 
 The routing errors include cases where the agent auto-handled issues that were labelled for escalation, particularly refunds, seller disputes, previous-support complaints, account/security issues, and order-specific investigations.
 
-## 10. Top Five Failure Modes
+## 11. Top Five Failure Modes
 
 These examples are taken from `results/evaluation/error_analysis.json` and the final prediction file.
 
-1. **`gold_0030` — Missing product and refund**
+1. **`gold_0004` — Delivered product destroyed**
 
-   A missing product and uninitiated refund was classified as `delivery_issue` instead of `return_refund`.
+   A delivered product destroyed before the customer could use it was classified as `delivery_issue` instead of `product_issue`, and was auto-handled instead of escalated.
 
-   **Hypothesis:** multiple transaction stages compete in the same message, and the refund clause was underweighted.
+   **Hypothesis:** delivery language dominates the damaged-product signal, and the response policy does not sufficiently prioritize case-specific damage.
 
-2. **`gold_0037` — Damaged product versus refund workflow**
+2. **`gold_0005` — Pre-order delivery date**
 
-   Broken desks with a return-cost and refund complaint was classified as `product_issue` instead of `return_refund`.
+   A pre-order with no delivery date was classified as `delivery_issue` instead of `order_issue`.
 
-   **Hypothesis:** product damage dominated the explicit return/refund workflow.
+   **Hypothesis:** delivery vocabulary overwhelms the pre-order/order-state signal.
 
-3. **`gold_0055` — Prime charge**
+3. **`gold_0014` — Wrong product after previous issue**
 
-   An unrecognized Prime charge was classified as `payment_issue` instead of `prime_membership`.
+   A wrong phone case after a prior delivery issue was classified as `product_issue` instead of `customer_service`, and was auto-handled.
 
-   **Hypothesis:** charge language obscured the membership-specific intent.
+   **Hypothesis:** the concrete product complaint overwhelms the repeated-case and previous-support signal.
 
-4. **`gold_0113` — Fraudulent third-party seller**
+4. **`gold_0016` — Delivery and customer-service complaint**
 
-   A suspected fraudulent third-party seller was auto-handled instead of escalated.
+   A complaint about poor delivery and customer service was classified as `customer_service` instead of `delivery_issue`, and was auto-handled.
 
-   **Hypothesis:** seller detection worked, but the risk and case-specific routing policy was too weak.
+   **Hypothesis:** broad complaint language is over-weighted relative to the operational delivery problem.
 
-5. **`gold_0182` — Multilingual phishing/security message**
+5. **`gold_0019` — Pre-order release delay**
 
-   A Japanese phishing SMS was classified as `other` instead of `account_access` and auto-handled.
+   A pre-ordered game delayed past release was classified as `delivery_issue` instead of `order_issue`, and was auto-handled.
 
-   **Hypothesis:** multilingual and security-related language is poorly represented by the English-oriented prompt/retrieval setup.
+   **Hypothesis:** delivery timing terms dominate the pre-order/order-management distinction.
 
 These failures suggest that the main remaining weaknesses are not basic intent recognition alone, but distinguishing overlapping transaction stages, recognizing risk-sensitive cases, and handling multilingual/security-specific messages conservatively.
 
-## 11. What Is Misleading About My Headline Number?
+## 12. What Is Misleading About My Headline Number?
 
-The 71.5% intent accuracy and 85.5% routing accuracy are measured on a 200-example evaluation set sampled from a held-out test split rather than representing the full TWCS distribution.
+The repaired 73.0% intent accuracy and 76.0% routing accuracy are measured on
+200 examples sampled from a held-out test split, not the full TWCS
+distribution. They depend on the selected Groq model, prompt, retrieval
+corpus, provider behavior, and taxonomy. The routing score is also sensitive
+to subjective escalation labels. The human calibration shows that the
+automated judge is substantially more positive than the human ratings.
 
-The result depends on the selected Groq model, prompt, historical-example retrieval, provider behavior, and taxonomy. The golden set is fixed and relatively small, so the reported numbers should not be interpreted as estimates of production accuracy.
+The result depends on the selected Groq model, prompt, historical-example
+retrieval, provider behavior, and taxonomy. The golden set is fixed and
+relatively small, so the reported numbers should not be interpreted as
+estimates of production accuracy.
 
-The LLM judge provides an additional automated quality signal, not a production guarantee. It was not independently calibrated against human ratings, so its agreement with human reviewers is unknown.
+The LLM judge is not a validated quality metric in this project. On the
+40-example human calibration sample, exact agreement was 12.5%, adjacent
+agreement was 25.0%, quadratic Cohen's kappa was -0.0384, and mean absolute
+error was 2.5. The judge was substantially more positive than the human
+ratings.
 
 These numbers demonstrate a promising prototype rather than production-level accuracy.
 
-## 12. Decision Log
+## 13. Decision Log
 
 Key decisions are recorded in `results/decision_log.md`, including:
 
@@ -135,7 +170,7 @@ Key decisions are recorded in `results/decision_log.md`, including:
 
 The decision log also records important failed experiments and implementation trade-offs rather than only the final architecture.
 
-## 13. What I Would Build Next Week
+## 14. What I Would Build Next Week
 
 I would:
 
@@ -147,7 +182,7 @@ I would:
 6. Add retrieval-quality diagnostics to determine when historical evidence is weak or mismatched.
 7. Add confidence thresholds and an explicit abstention path for uncertain or high-risk cases.
 
-## 14. Limitations and Reproduction
+## 15. Limitations and Reproduction
 
 Install dependencies with:
 

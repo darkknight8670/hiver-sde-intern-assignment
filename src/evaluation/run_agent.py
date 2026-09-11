@@ -14,6 +14,7 @@ from agent import SupportAgent
 
 GOLDEN_FILE = PROJECT_ROOT / "data" / "golden" / "golden_set.jsonl"
 OUTPUT_FILE = PROJECT_ROOT / "results" / "evaluation" / "agent_predictions.jsonl"
+EVALUATION_VERSION = "answer-leakage-fixed-v2"
 
 
 def load_jsonl(path):
@@ -56,11 +57,24 @@ def load_successful_predictions(path):
 
             if (
                 record.get("status") == "success"
+                and record.get("evaluation_version") == EVALUATION_VERSION
                 and record.get("example_id")
             ):
                 predictions[record["example_id"]] = record
 
     return predictions
+
+
+def compact_prediction_file(path):
+    """Keep only unique predictions from the current protocol version."""
+    if not path.exists():
+        return
+
+    predictions = load_successful_predictions(path)
+
+    with path.open("w", encoding="utf-8") as file:
+        for prediction in predictions.values():
+            file.write(json.dumps(prediction, ensure_ascii=False) + "\n")
 
 
 def append_prediction(path, prediction):
@@ -86,6 +100,7 @@ def main():
     print(f"Golden examples: {len(golden)}")
 
     successful = load_successful_predictions(OUTPUT_FILE)
+    compact_prediction_file(OUTPUT_FILE)
 
     print(f"Already successful: {len(successful)}")
 
@@ -128,6 +143,7 @@ def main():
 
             prediction = {
                 "example_id": example_id,
+                "evaluation_version": EVALUATION_VERSION,
                 "conversation_id": example["conversation_id"],
                 "customer_message": example["customer_message"],
                 "gold_intent": example["gold_intent"],
@@ -137,6 +153,8 @@ def main():
                 "routing_reason": result["routing_reason"],
                 "response": result["response"],
                 "retrieved_examples": result["retrieved_examples"],
+                "provider": result["provider"],
+                "model": result["model"],
                 "timestamp": datetime.now(timezone.utc).isoformat(),
                 "status": "success",
             }

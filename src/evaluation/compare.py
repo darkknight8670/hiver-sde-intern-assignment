@@ -40,6 +40,7 @@ OUTPUT_FILE = (
     / "evaluation"
     / "comparison.json"
 )
+EVALUATION_VERSION = "answer-leakage-fixed-v2"
 
 
 def load_jsonl(path):
@@ -82,6 +83,12 @@ def build_evaluation_records(golden, predictions):
     for example_id, prediction in prediction_by_id.items():
 
         if prediction.get("status") == "error":
+            continue
+
+        if (
+            prediction.get("status") == "success"
+            and prediction.get("evaluation_version") != EVALUATION_VERSION
+        ):
             continue
 
         if example_id not in gold_by_id:

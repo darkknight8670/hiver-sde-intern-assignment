@@ -19,12 +19,12 @@
   },
   "groq_agent": {
     "n": 200,
-    "intent_accuracy": 0.715,
-    "intent_macro_f1": 0.6865887251032481,
-    "intent_weighted_f1": 0.714280033323046,
-    "routing_accuracy": 0.855,
-    "routing_macro_f1": 0.8354096313743296,
-    "routing_weighted_f1": 0.8603944493317063
+    "intent_accuracy": 0.73,
+    "intent_macro_f1": 0.6852774616656166,
+    "intent_weighted_f1": 0.7233788098201468,
+    "routing_accuracy": 0.76,
+    "routing_macro_f1": 0.7425997425997426,
+    "routing_weighted_f1": 0.7720463320463321
   },
   "coverage": {
     "golden_n": 200,
